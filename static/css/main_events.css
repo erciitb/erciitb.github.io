@@ -1,0 +1,386 @@
+:root {
+    --bg-color: #1F2833;
+    --button-color: #2C9DA5;
+    --vertical-color: #333;
+    --overlay: #111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-events .title {
+    text-align: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(5vh + 5vw);
+    line-height: 86%;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: max-content;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 10px black;
+}
+
+.main-events .background {
+    background-image: url("../media/events/image9.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    /* filter: contrast(0.5); */
+}
+
+.main-events {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* event-container for event */
+
+.event-container {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* one desktop-card */
+
+.event-container .desktop-card {
+    margin-bottom: 100px;
+    position: relative;
+    /* max-height: 0px; */
+    width: 90vw;
+    height: 40vw;
+    min-height: 200px;
+    max-height: 400px;
+    min-width: 500px;
+    max-width: 1000px;
+    /* padding-top: 40%; */
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+/* half circle above */
+
+.event-container .desktop-card:before {
+    content: "";
+    z-index: 99;
+    position: absolute;
+    top: -10px;
+    left: 32px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: var(--bg-color);
+}
+
+
+/* half circle below */
+
+.event-container .desktop-card:after {
+    content: "";
+    z-index: 99;
+    position: absolute;
+    bottom: -10px;
+    left: 32px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: var(--bg-color);
+}
+
+
+/* dots on image */
+
+.event-container ul {
+    z-index: 99;
+    position: absolute;
+    left: 39px;
+    top: 5px;
+    list-style-type: none;
+}
+
+
+/* dots on image */
+
+.event-container ul li {
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    margin: 6px 0;
+    background-color: var(--bg-color);
+}
+
+
+/* Event title */
+
+.event-container h2 {
+    pointer-events: none;
+    z-index: 99;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    font-size: 400%;
+    font-weight: 700;
+    color: #fff;
+    -webkit-text-stroke: 0.5px var(--overlay);
+}
+
+.event-container .large-head {
+    font-size: 350%;
+}
+
+
+/* for arrow */
+
+.event-container i {
+    opacity: 0;
+    color: #fff;
+    will-change: transform;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.event-container .fa-arrow-right {
+    font-size: calc(3vw + 3vh);
+    z-index: 100;
+    cursor: pointer;
+}
+
+.event-container .large-head .fa-arrow-right {
+    font-size: calc(2.5vw + 2.5vh);
+}
+
+
+/* short line */
+
+.event-container .vertical {
+    z-index: 99;
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    color: #333;
+    opacity: 0.7;
+    font-size: calc(1vw + 1vh);
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* picture */
+
+.event-container .desktop-card .pic {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    z-index: 0;
+    width: 80%;
+    height: 100%;
+    /* background-image: url("../media/events/arduino.jpg"); */
+    background-size: cover;
+    /* filter: grayscale(100%); */
+    transition: all 0.2s ease;
+}
+
+
+/* circle */
+
+.event-container button {
+    position: absolute;
+    left: 90%;
+    bottom: 7%;
+    width: 7%;
+    padding-top: 7%;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 400px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    mix-blend-mode: hard-light;
+}
+
+.event-container .overlay {
+    background-color: var(--overlay);
+    opacity: 0.3;
+    mix-blend-mode: color-burn;
+}
+
+.event-container button i {
+    font-size: 3rem;
+}
+
+.event-container .detail {
+    z-index: 1099;
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    width: 42%;
+    height: 60%;
+    color: #FFF;
+    opacity: 0;
+    font-size: 75%;
+    letter-spacing: 1px;
+    text-align: justify;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* hovering effect */
+
+.event-container .desktop-card:hover i {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.event-container .desktop-card:hover button {
+    transform: scale(20.5);
+}
+
+.event-container .desktop-card:hover .vertical {
+    color: var(--vertical-color);
+    text-shadow: 0 0 1px #666;
+}
+
+.event-container .desktop-card:hover .pic {
+    opacity: 0.9;
+    filter: blur(1px);
+}
+
+.event-container .desktop-card:hover .detail {
+    opacity: 1;
+    /* background-color: #333; */
+    /* text-shadow: 0 0 5px #333; */
+}
+
+
+/* half circle above */
+
+.event-container .desktop-card2:before {
+    top: -10px;
+    left: auto;
+    right: 32px;
+}
+
+
+/* half circle below */
+
+.event-container .desktop-card2:after {
+    bottom: -10px;
+    right: 32px;
+    left: auto;
+}
+
+
+/* dots on image */
+
+.event-container .desktop-card2 ul {
+    z-index: 99;
+    position: absolute;
+    right: 39px;
+    left: auto;
+    top: 5px;
+    list-style-type: none;
+}
+
+
+/* Event title */
+
+.event-container .desktop-card2 h2 {
+    bottom: 0;
+    left: 25%;
+    right: auto;
+}
+
+
+/* short line */
+
+.event-container .desktop-card2 .vertical {
+    left: 15%;
+    right: auto;
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
+}
+
+
+/* picture */
+
+.event-container .desktop-card2 .pic {
+    left: 20%;
+}
+
+
+/* circle */
+
+.event-container .desktop-card2 button {
+    right: 90%;
+    left: auto;
+}
+
+.event-container .desktop-card2 .detail {
+    left: 25%;
+}
+
+@media screen and (min-width: 1000px) {
+    .event-container h2 {
+        font-size: 700%;
+    }
+    .event-container .large-head {
+        font-size: 450%;
+    }
+    .event-container .detail {
+        font-size: 100%;
+    }
+}
+
+.mobile-events-container {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .mobile-events-container {
+        display: flex;
+    }
+    .event-container .desktop-card {
+        display: none;
+    }
+    /* .event-container .mobile-card {
+        display: initial;
+    } */
+}
