@@ -1,0 +1,11 @@
+/* making scrolling smoother  */
+html {
+    scroll-behavior: smooth;
+    /* removing scrollbar  */
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
