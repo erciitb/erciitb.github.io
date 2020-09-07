@@ -22,7 +22,7 @@ $send = mail( $to, $emailSubject, $emailBody, $headers);
 
 if ($send) {
     echo 'Redirecting to home page';
-    $URL="contact.html";
+    $URL="index.html";
     echo "<script type='text/javascript'>window.location.href='$URL';</script>";
 } else {
     echo 'there is some problem';
