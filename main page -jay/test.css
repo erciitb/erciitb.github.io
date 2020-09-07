@@ -19,6 +19,11 @@ body.dark {
     overflow-x: hidden;
     transition: all 200ms linear;
 }
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .home {
     width: 100%;
