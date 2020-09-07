@@ -60,12 +60,14 @@ body.dark {
     float: left;
     width: 33.33%;
     padding: 5px;
+    vertical-align: center;
 }
 
 .column1 {
     float: left;
     width: 66.66%;
     padding: 5px;
+    vertical-align: center;
 }
 
 ::selection {
