@@ -65,6 +65,10 @@ body {
 /* adding border to the project section */
 .project-container .project-border {
     margin: 2% 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* one desktop-card */
@@ -143,7 +147,6 @@ body {
 /* project title */
 
 .project-container h2 {
-    pointer-projects: none;
     z-index: 99;
     font-family: "Poppins", sans-serif;
     position: absolute;
