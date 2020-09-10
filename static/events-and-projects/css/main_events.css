@@ -65,6 +65,11 @@ body {
 /* adding border to the event section */
 .event-container .event-border {
     margin: 2% 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 
