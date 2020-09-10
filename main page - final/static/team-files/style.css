@@ -1,7 +1,13 @@
+html {
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
 body {
     margin: 0;
-    padding: 0;
-
+    padding: 0;   
 }
 
 p {
@@ -66,7 +72,6 @@ button {
 
 .team-section .team-content {
     /* this is the wrapper for the team grid  */
-    width: 90%;
     margin: 3% auto 0px;
 
     display: flex;
@@ -76,19 +81,12 @@ button {
 
 .team-section .team-content .team-content-mangrs {
     /* this is the manager row  */
-    width: 100%;
-
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
-
     display: grid;
-    grid-template-columns: repeat( auto-fit, 240px);
-    grid-column-gap: 1%;
-    grid-row-gap: 1%;
+    grid-template-columns: 20% 20%;
     justify-content: center;
-
     margin: 0 auto;
+
+    width: 90%;
 }
 
 .team-content .team-content-mangrs .team-contact-card {
@@ -97,9 +95,15 @@ button {
 
 .team-section .team-content .team-content-cons-enthus {
     /* this is the convener wrapper */
-    width: 100%;
+    width: 75%;
     margin: 2% auto;
     text-align: center;
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+
 }
 
 .team-content .team-content-cons-enthus .team-convener-row {
@@ -114,17 +118,12 @@ button {
 
 .team-content .team-contact-card {
     /* these are the contact cards for the full team  */
-    width: 200px;
-    height: 240px;
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+    width: 100%;
 
     display: inline-block;
     text-align: center;
     align-items: center;
-    margin: 10px 10px;
+    padding: 10px 10px;
     /* border: 1px solid black; */
 }
 
@@ -134,8 +133,9 @@ button {
 }
 
 .team-content .team-contact-card .team-member-img img {
-    width: 170px;
-    height: 170px;
+    width: 80%;
+    max-width: 220px;
+    /* min-width: 110px; */
 
     border-radius: 50%;
     margin: 10px auto;
@@ -170,10 +170,6 @@ button {
     z-index: 10;
 }
 
-.team-content .team-contact-card .team-member-img:hover .team-member-contact a:hover {
-    color: white;
-}
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -204,44 +200,24 @@ button {
 
 
 @media screen and (max-width:1280px) {
-    .team-section .team-content {
-        width: 100%;
-    }
-    
-    .team-content .team-contact-card .team-member-img img {
-        /* width: 140px;
-        height: 140px; */
-        width: 130px;
-        height: 130px;
-    }
-    
-    .team-content .team-contact-card {
-        /* width: 170px;
-        height: 190px; */
-        width: 160px;
-        height: 180px;
-        margin: 5px 0;
-    }
-    
     .team-section {
         font-size: 16px;
+    }
+
+    .team-section .team-content .team-content-cons-enthus {
+        width: 90%;
     }
 }
 
 @media screen and (max-width:768px) {
-    .team-content .team-contact-card .team-member-img img {
-        /* width: 130px;
-        height: 130px;  */
-        width: 110px;
-        height: 110px; 
+    .team-section .team-content .team-content-mangrs {
+        grid-template-columns: 33.3% 33.3%;
     }
+    .team-section .team-content .team-content-cons-enthus {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
-    .team-content .team-contact-card {
-        /* these are the contact cards for the full team  */
-        /* width: 160px;
-        height: 180px; */
-        width: 140px;
-        height: 160px;
+        width: 100%;
     }
 
     .team-content .team-contact-card .team-member-name#long-name {
