@@ -1,17 +1,17 @@
 var projectslideIndex = 0;
-showSlides(projectslideIndex);
-setInterval(() => { plusSlides(1); }, 5000);
+showeventSlides(projectslideIndex);
+setInterval(() => { pluseventSlides(1); }, 5000);
 // Next/previous controls
-function plusSlides(n) {
-    showSlides(projectslideIndex + n);
+function pluseventSlides(n) {
+    showeventSlides(projectslideIndex + n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-    showSlides(n);
+function currenteventSlide(n) {
+    showeventSlides(n);
 }
 
-function showSlides(newprojectslideIndex) {
+function showeventSlides(newprojectslideIndex) {
     var i;
     var slides = document.getElementsByClassName("eventSlides");
     var n = slides.length;
@@ -50,11 +50,11 @@ function reset(slides) {
 $(document).keydown(function(e) {
     switch (e.which) {
         case 37: // eventLeft
-            plusSlides(-1);
+            pluseventSlides(-1);
             break;
 
         case 39: // eventRight
-            plusSlides(1);
+            pluseventSlides(1);
             break;
 
         default:
@@ -138,9 +138,9 @@ function swipedetect(el, callback) {
 
 function handleswipe(isSwipe) {
     if (isSwipe == 1)
-        plusSlides(1);
+        pluseventSlides(1);
     else if (isSwipe == 2)
-        plusSlides(-1);
+        pluseventSlides(-1);
 }
 
 
@@ -157,8 +157,8 @@ swipedetect(document.getElementById("event-slideshow-container"), function(swipe
             e.children[2].className += " hide";
         e.className = e.className.replace(" show-content", "");
     } else if (swipedir == "eventLeft") {
-        plusSlides(1);
+        pluseventSlides(1);
     } else if (swipedir == "eventRight") {
-        plusSlides(-1);
+        pluseventSlides(-1);
     }
 });
