@@ -5,9 +5,10 @@ html {
 html::-webkit-scrollbar {
     display: none;
 }
+
 body {
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
 
 p {
@@ -30,6 +31,7 @@ button {
     background: none;
 }
 
+
 /* 
 ===============handling the team section==============
 */
@@ -38,7 +40,6 @@ button {
     width: 100%;
     background-color: #1F2833;
     color: white;
-
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
 }
@@ -47,24 +48,23 @@ button {
     width: 100%;
     height: 50vh;
     background: url(./media/team-details-bg.JPG);
-
     /* adding parallax */
     background-attachment: fixed;
-    background-position-y: -340px;
+    /* background-position-y: -340px; */
     background-repeat: no-repeat;
     background-size: cover;
     /* background-size: 100% 100%; for resizing */
-
     display: flex;
+    background-position: center;
     justify-content: center;
     align-items: center;
 }
 
 .team-section .team-head.background-parallax h2 {
     font-family: "Ubuntu", sans-serif;
-    font-size: 96px;
+    font-size: calc(5vw + 5vh);
     color: white;
-
+    text-shadow: 0 0 10px black;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -73,7 +73,6 @@ button {
 .team-section .team-content {
     /* this is the wrapper for the team grid  */
     margin: 3% auto 0px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +84,6 @@ button {
     grid-template-columns: 20% 20%;
     justify-content: center;
     margin: 0 auto;
-
     width: 90%;
 }
 
@@ -98,18 +96,15 @@ button {
     width: 75%;
     margin: 2% auto;
     text-align: center;
-
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
-
 }
 
 .team-content .team-content-cons-enthus .team-convener-row {
     /* this is for the styling of one convener/enthusiast row  */
     width: 100%;
-
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -119,7 +114,6 @@ button {
 .team-content .team-contact-card {
     /* these are the contact cards for the full team  */
     width: 100%;
-
     display: inline-block;
     text-align: center;
     align-items: center;
@@ -136,7 +130,6 @@ button {
     width: 80%;
     max-width: 220px;
     /* min-width: 110px; */
-
     border-radius: 50%;
     margin: 10px auto;
     transition: 0.4s ease-in-out;
@@ -147,20 +140,18 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
     width: 100%;
     font-size: 1.275em;
-    
     text-align: center;
     z-index: -1;
     transition: 0.4s ease-in-out;
 }
 
-.team-contact-card .team-member-contact a{
+.team-contact-card .team-member-contact a {
     padding: 3px;
 }
 
-.team-content .team-contact-card .team-member-img:hover img{
+.team-content .team-contact-card .team-member-img:hover img {
     opacity: 0.5;
 }
 
@@ -187,23 +178,20 @@ button {
 
 .team-content .team-contact-card .team-member-name#long-name {
     font-size: 0.9em;
-} 
+}
 
 .team-content .team-contact-card .team-member-pos {
     padding: 5px 0px;
     padding-top: 2px;
     font-size: 0.75em;
     opacity: 0.7;
-
     white-space: nowrap;
 }
-
 
 @media screen and (max-width:1280px) {
     .team-section {
         font-size: 16px;
     }
-
     .team-section .team-content .team-content-cons-enthus {
         width: 90%;
     }
@@ -216,20 +204,15 @@ button {
     .team-section .team-content .team-content-cons-enthus {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-
         width: 100%;
     }
-
     .team-content .team-contact-card .team-member-name#long-name {
         font-size: 0.75em;
-    } 
-
-
+    }
     .team-section .team-head.background-parallax h2 {
-        font-size: 60px;
+        /* font-size: 60px; */
         background-position-x: 1000px;
     }
-
     .team-section {
         font-size: 14px;
     }

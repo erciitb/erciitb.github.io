@@ -1,6 +1,6 @@
 var slideIndex = 0;
 showSlides(slideIndex);
-setInterval(() => { plusSlides(1); }, 5000);
+// setInterval(() => { plusSlides(1); }, 5000);
 // Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex + n);
@@ -65,7 +65,7 @@ $(document).keydown(function(e) {
 
 function unify(e) { return e.changedTouches ? e.changedTouches[0] : e };
 
-function swipedetect(el, callback) {
+function projectswipedetect(el, callback) {
 
     var touchsurface = el,
         swipedir,
@@ -144,7 +144,7 @@ function handleswipe(isSwipe) {
 }
 
 
-swipedetect(document.getElementById("project-slideshow-container"), function(swipedir) {
+projectswipedetect(document.getElementById("project-slideshow-container"), function(swipedir) {
     console.log(swipedir)
     if (swipedir == "up") {
         e = document.getElementsByClassName("projectSelected")[0].children[0].children[1];

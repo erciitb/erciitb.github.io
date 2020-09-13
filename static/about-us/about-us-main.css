@@ -151,7 +151,7 @@ body.dark {
     top: 0;
     left: 0;
     content: '';
-    z-index: 2;
+    z-index: 2000;
     transition: all 300ms linear;
 }
 
@@ -246,7 +246,7 @@ body.dark {
     width: 100%;
     margin-top: 40px;
     transform: translateY(-50%);
-    z-index: 20;
+    z-index: 1000;
 }
 
 h1 {
@@ -451,7 +451,7 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     bottom: 30px;
     right: 30px;
     display: block;
-    z-index: 100;
+    z-index: 1000;
     transition: all 250ms linear;
 }
 
