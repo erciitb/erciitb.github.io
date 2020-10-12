@@ -1,0 +1,40 @@
+body {
+	cursor: none;
+	/* user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none; */
+}
+
+
+/* for some reason this doesn't work */
+/*
+.hover-this:hover ~ .cursor{
+	background-color: blue;
+	mix-blend-mode: difference;
+	transform: translate(-50%, -50%) scale(8);
+} */
+
+.cursor {
+	display: none;
+	
+	pointer-events: none;
+	position: fixed;
+	padding: 0.9rem;
+	background-color: white;
+	border-radius: 50%;
+	/* transition: transform 0.3s ease-out; */
+	transition: all 0.1s ease-out;
+	/* z-index: -1; */
+}
+
+
+
+button, a {
+	cursor: none;
+}
+
+@media screen and (min-width:768px) {
+	.cursor {
+		display: block;
+	}
+}
