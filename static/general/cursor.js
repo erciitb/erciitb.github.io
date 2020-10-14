@@ -6,7 +6,7 @@ document.addEventListener('mousemove', e => {
 })
 
 const enlargeCursor = function(e) {
-	cursor.style.scale = 2.5;
+	cursor.style.scale = 4;
 	if (e.type == 'mouseleave') cursor.style.scale = 1;
 }
 
