@@ -1,0 +1,41 @@
+/* 
+for some reason this doesn't work 
+*/
+/*
+.hover-this:hover ~ .cursor{
+	background-color: blue;
+	mix-blend-mode: difference;
+	transform: translate(-50%, -50%) scale(8);
+} */
+
+.cursor {
+	display: none;
+	pointer-events: none;
+	position: fixed;
+	padding: 0.8rem;
+	background-color: white;
+	border-radius: 50%;
+	/* transition: transform 0.3s ease-out; */
+	transition: all 0.1s ease-out;
+	z-index: 100002;
+}
+
+/*
+=================================================
+for removing pointers all over the place
+=================================================
+*/
+
+* {
+	cursor: none;
+}
+
+[type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled), button:not(:disabled) {
+	cursor: none;
+}
+
+@media screen and (min-width:768px) {
+	.cursor {
+		display: block;
+	}
+}

@@ -32,7 +32,10 @@
     <link rel="stylesheet" href="./static/team-files/style.css">
 
     <!-- Contact Form section CSS -->
-    <link rel="stylesheet" href="./static/contact-files/style2.css">
+	<link rel="stylesheet" href="./static/contact-files/style2.css">
+	
+	<!-- Cursor Animation CSS -->
+	<link rel="stylesheet" href="./static/general/cursor.css">	
 
 </head>
 
@@ -91,12 +94,14 @@
                 </div>
             </div>
             <div class="column1 ">
-                <div class="abouttext col-md-12 col-12 " style="width:100% ;padding-right:20% ">
-                    Have you ever wanted to design a circuit by yourself or control your own bot? Well, you’ve come to the right place! Electronics and Robotics Club, an integral part of the Institute Technical Council, IIT Bombay, is the club that satiates the techie that
+                <div class="abouttext col-md-12 col-12" style="width:100% ;padding-right:20% ">
+					<div class="hover-enlarge hover-difference">
+					Have you ever wanted to design a circuit by yourself or control your own bot? Well, you’ve come to the right place! Electronics and Robotics Club, an integral part of the Institute Technical Council, IIT Bombay, is the club that satiates the techie that
                     you all possess. Our vision is to develop a powerful and remarkable technical community of students across all years and departments. We encourage every student to delve into tech and also provide you with a plethora of opportunities-
                     be it, group discussions, hackathons, boot camps, GCs, expert-talks, or even various competitions. The Electronics and Robotics Club was born from the two of its parent clubs(guess which? :P), 2017 being the year of christening. We
                     encourage every one of you to tinker around and excel in your technical skills by performing hands-on experiments with the innumerable resources at your disposal. ERC is ever-ready to welcome new innovative ideas, contributions as
-                    well as suggestions for its excellence. A perfect place for you to explore tech and tinker around!
+					well as suggestions for its excellence. A perfect place for you to explore tech and tinker around!
+					</div>
                 </div>
             </div>
 
@@ -106,7 +111,7 @@
 
     <!-- Events Section  -->
     <div class="event-container" id="1">
-        <div class="main-events">
+        <div class="main-events hover-enlarge hover-difference">
             <div class="background"></div>
             <div class="title">Main Events</div>
         </div>
@@ -596,7 +601,7 @@
 
     <!-- Projects Section  -->
     <div class="project-container" id="2">
-        <div class="main-projects">
+        <div class="main-projects hover-enlarge hover-difference">
             <div class="background"></div>
             <div class="title">Main Projects</div>
         </div>
@@ -1033,7 +1038,7 @@
 
 	<!-- Teams Section  -->
 	<div class="team-section " id="3 ">
-		<div class="team-head background-parallax ">
+		<div class="team-head background-parallax hover-enlarge hover-difference">
 			<h2>Meet the Team</h2>
 		</div>
 		<div class="team-content ">
@@ -1292,15 +1297,15 @@
 	<!-- Contact Form  -->
 	<div class="contact-section" id="4">
 		<div class="contact-details">
-			<p id="contact-text">
+			<p id="contact-text" class="hover-difference">
 				Get directly in touch with us:
 			</p>
-			<div class="contact-icons">
+			<div class="contact-icons hover-difference">
 				<a href="https://www.facebook.com/erciitb"><i class="fab fa-facebook-square"></i></a>
 				<a href="https://www.instagram.com/erc.iitb/"><i class="fab fa-instagram"></i></a>
 				<a href="mailto:erciitbombay@gmail.com"><i class="far fa-envelope"></i></a>
 			</div>
-			<a href="mailto:elecrobo.club@iitb.ac.in" id="contact-mail">elecrobo.club@iitb.ac.in</a>
+			<a href="mailto:elecrobo.club@iitb.ac.in" id="contact-mail" class="hover-difference">elecrobo.club@iitb.ac.in</a>
 			<button class="contact-form-button">
 				Message us
 			</button>
@@ -1336,13 +1341,18 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<!-- For Scroll bot -->
 	<div id="scroll-bot">
 		<img src="./static/about-us/scroll-bot.png" alt="">
 	</div>
 	<div class="ender"></div>
 
+	<!-- Custom cursor  -->
+	<div class="cursor"></div>
+	
+	<!-- for the cursor -->
+	<script src="./static/general/cursor.js"></script>
 	<!-- javascript libraries -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
