@@ -1,12 +1,6 @@
-body {
-	cursor: none;
-	/* user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none; */
-}
-
-
-/* for some reason this doesn't work */
+/* 
+for some reason this doesn't work 
+*/
 /*
 .hover-this:hover ~ .cursor{
 	background-color: blue;
@@ -16,20 +10,27 @@ body {
 
 .cursor {
 	display: none;
-	
 	pointer-events: none;
 	position: fixed;
-	padding: 0.9rem;
+	padding: 0.8rem;
 	background-color: white;
 	border-radius: 50%;
 	/* transition: transform 0.3s ease-out; */
 	transition: all 0.1s ease-out;
-	/* z-index: -1; */
+	z-index: 100002;
 }
 
+/*
+=================================================
+for removing pointers all over the place
+=================================================
+*/
 
+* {
+	cursor: none;
+}
 
-button, a {
+[type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled), button:not(:disabled) {
 	cursor: none;
 }
 

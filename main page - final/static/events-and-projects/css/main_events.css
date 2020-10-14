@@ -237,7 +237,7 @@ body {
     background-color: var(--button-color);
     border: none;
     border-radius: 400px;
-    cursor: pointer;
+    cursor: none;
     outline: none;
     transition: all 0.3s ease;
     mix-blend-mode: hard-light;
