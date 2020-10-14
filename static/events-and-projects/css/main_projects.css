@@ -5,18 +5,12 @@
     --overlay: #111;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .main-projects .title {
     text-align: center;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
-    font-size: 96px;
+    font-size: calc(5vw + 5vh);
     line-height: 86%;
     color: white;
     position: absolute;
@@ -62,7 +56,9 @@ body {
     flex-direction: column;
 }
 
+
 /* adding border to the project section */
+
 .project-container .project-border {
     margin: 2% 0;
     width: 100%;
@@ -70,6 +66,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 
 /* one desktop-card */
 
@@ -94,7 +91,7 @@ body {
 
 .project-container .desktop-card:before {
     content: "";
-    z-index: 99;
+    z-index: 10;
     position: absolute;
     top: -10px;
     left: 32px;
@@ -110,7 +107,7 @@ body {
 
 .project-container .desktop-card:after {
     content: "";
-    z-index: 99;
+    z-index: 10;
     position: absolute;
     bottom: -10px;
     left: 32px;
@@ -124,22 +121,24 @@ body {
 
 /* dots on image */
 
-.project-container ul {
-    z-index: 99;
+.project-container .card-dots {
+    z-index: 10;
     position: absolute;
     left: 39px;
     top: 5px;
+    padding-left: 0px;
     list-style-type: none;
 }
 
 
 /* dots on image */
 
-.project-container ul li {
+.project-container .card-dots li {
     width: 2px;
     height: 2px;
     border-radius: 2px;
     margin: 6px 0;
+    padding-left: 0px;
     background-color: var(--bg-color);
 }
 
@@ -147,7 +146,7 @@ body {
 /* project title */
 
 .project-container h2 {
-    z-index: 99;
+    z-index: 10;
     font-family: "Poppins", sans-serif;
     position: absolute;
     bottom: 0;
@@ -177,7 +176,7 @@ body {
 
 .project-container .fa-arrow-right {
     font-size: 100%;
-    z-index: 100;
+    z-index: 20;
     cursor: pointer;
 }
 
@@ -189,11 +188,12 @@ body {
 /* short line */
 
 .project-container .vertical {
-    z-index: 99;
+    z-index: 10;
     position: absolute;
     top: 5%;
-    right: 15%;
-    color: #333;
+    right: 14%;
+    color: #000;
+    font-weight: bold;
     opacity: 0.7;
     font-size: calc(1vw + 1vh);
     letter-spacing: 1px;
@@ -231,7 +231,7 @@ body {
     background-color: var(--button-color);
     border: none;
     border-radius: 400px;
-    cursor: pointer;
+    cursor: none;
     outline: none;
     transition: all 0.3s ease;
     mix-blend-mode: hard-light;
@@ -248,15 +248,16 @@ body {
 }
 
 .project-container .detail {
-    z-index: 1099;
+    z-index: 30;
     position: absolute;
-    top: 5%;
+    top: 10%;
+    bottom: 25%;
     right: 25%;
     width: 42%;
-    height: 60%;
+    /* height: 70%; */
     color: #FFF;
     opacity: 0;
-    font-size: 75%;
+    font-size: 80%;
     letter-spacing: 1px;
     text-align: justify;
     -webkit-transition: all 0.2s ease;
@@ -318,8 +319,8 @@ body {
 
 /* dots on image */
 
-.project-container .desktop-card2 ul {
-    z-index: 99;
+.project-container .desktop-card2 .card-dots {
+    z-index: 10;
     position: absolute;
     right: 39px;
     left: auto;
@@ -340,7 +341,7 @@ body {
 /* short line */
 
 .project-container .desktop-card2 .vertical {
-    left: 15%;
+    left: 14%;
     right: auto;
     writing-mode: vertical-lr;
     transform: scale(-1, -1);
@@ -373,6 +374,7 @@ body {
         font-size: 450%;
     }
     .project-container .detail {
+        top: 15%;
         font-size: 100%;
     }
 }

@@ -6,8 +6,8 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@
     font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
-    font-size: 96px;
+    font-size: calc(5vw + 5vh);
     line-height: 86%;
     color: white;
     position: absolute;
@@ -62,14 +62,15 @@ body {
     flex-direction: column;
 }
 
+
 /* adding border to the event section */
+
 .event-container .event-border {
     margin: 2% 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 
@@ -96,7 +97,7 @@ body {
 
 .event-container .desktop-card:before {
     content: "";
-    z-index: 99;
+    z-index: 10;
     position: absolute;
     top: -10px;
     left: 32px;
@@ -112,7 +113,7 @@ body {
 
 .event-container .desktop-card:after {
     content: "";
-    z-index: 99;
+    z-index: 10;
     position: absolute;
     bottom: -10px;
     left: 32px;
@@ -126,18 +127,19 @@ body {
 
 /* dots on image */
 
-.event-container ul {
-    z-index: 99;
+.event-container .card-dots {
+    z-index: 10;
     position: absolute;
     left: 39px;
     top: 5px;
+    padding-left: 0px;
     list-style-type: none;
 }
 
 
 /* dots on image */
 
-.event-container ul li {
+.event-container .card-dots li {
     width: 2px;
     height: 2px;
     border-radius: 2px;
@@ -150,7 +152,7 @@ body {
 
 .event-container h2 {
     pointer-events: none;
-    z-index: 99;
+    z-index: 10;
     font-family: "Poppins", sans-serif;
     position: absolute;
     bottom: 0;
@@ -180,7 +182,7 @@ body {
 
 .event-container .fa-arrow-right {
     font-size: 90%;
-    z-index: 100;
+    z-index: 20;
     cursor: pointer;
 }
 
@@ -192,11 +194,12 @@ body {
 /* short line */
 
 .event-container .vertical {
-    z-index: 99;
+    z-index: 10;
     position: absolute;
     top: 5%;
-    right: 15%;
-    color: #333;
+    right: 14%;
+    color: #000;
+    font-weight: bold;
     opacity: 0.7;
     font-size: calc(1vw + 1vh);
     letter-spacing: 1px;
@@ -234,7 +237,7 @@ body {
     background-color: var(--button-color);
     border: none;
     border-radius: 400px;
-    cursor: pointer;
+    cursor: none;
     outline: none;
     transition: all 0.3s ease;
     mix-blend-mode: hard-light;
@@ -251,15 +254,16 @@ body {
 }
 
 .event-container .detail {
-    z-index: 1099;
+    z-index: 30;
     position: absolute;
-    top: 5%;
+    top: 10%;
+    bottom: 10%;
     right: 25%;
     width: 42%;
-    height: 60%;
+    /* height: 60%; */
     color: #FFF;
     opacity: 0;
-    font-size: 75%;
+    font-size: 85%;
     letter-spacing: 1px;
     text-align: justify;
     -webkit-transition: all 0.2s ease;
@@ -321,8 +325,8 @@ body {
 
 /* dots on image */
 
-.event-container .desktop-card2 ul {
-    z-index: 99;
+.event-container .desktop-card2 .card-dots {
+    z-index: 10;
     position: absolute;
     right: 39px;
     left: auto;
@@ -343,7 +347,7 @@ body {
 /* short line */
 
 .event-container .desktop-card2 .vertical {
-    left: 15%;
+    left: 14%;
     right: auto;
     writing-mode: vertical-lr;
     transform: scale(-1, -1);
@@ -376,7 +380,8 @@ body {
         font-size: 450%;
     }
     .event-container .detail {
-        font-size: 100%;
+        font-size: 105%;
+        top: 20%;
     }
 }
 
@@ -384,7 +389,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .mobile-events-container {
         display: flex;
     }

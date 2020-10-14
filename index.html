@@ -3,298 +3,956 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Home</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- Favicon -->
-	<link rel="icon" href="./favicon.svg" sizes="any" type="image/svg+xml">
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.svg" sizes="any" type="image/svg+xml">
 
-	<!-- Introduction and About Us Section CSS -->
-	<link rel="stylesheet" href="./static/about-us/about-us-main.css">
+    <!-- Introduction and About Us Section CSS -->
+    <link rel="stylesheet" href="./static/about-us/about-us-main.css">
 
-	<!-- Bootstrap 4  -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<!--Google Fonts-->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&family=Poppins:wght@700&family=Ubuntu&display=swap" rel="stylesheet"> 
-	<!--Font Awesome 5-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-	
-	<!-- Events section CSS  -->
-	<link rel='stylesheet' type="text/css" href="./static/events-and-projects/css/main_events_mobile.css">
-	<link rel='stylesheet' type='text/css' href='./static/events-and-projects/css/main_events.css'>
-	
-	<!-- Projects section CSS -->
-	<link rel='stylesheet' type="text/css" href="./static/events-and-projects/css/main_projects_mobile.css">
-	<link rel='stylesheet' type='text/css' href='./static/events-and-projects/css/main_projects.css'>
-	
-	<!-- Team Details section CSS  -->
-	<link rel="stylesheet" href="./static/team-files/style.css">
+    <!-- Bootstrap 4  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&family=Poppins:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+    <!--Font Awesome 5-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
-	<!-- Contact Form section CSS -->
+    <!-- Events section CSS  -->
+    <link rel='stylesheet' type="text/css" href="./static/events-and-projects/css/main_events_mobile.css">
+    <link rel='stylesheet' type='text/css' href='./static/events-and-projects/css/main_events.css'>
+
+    <!-- Projects section CSS -->
+    <link rel='stylesheet' type="text/css" href="./static/events-and-projects/css/main_projects_mobile.css">
+    <link rel='stylesheet' type='text/css' href='./static/events-and-projects/css/main_projects.css'>
+
+    <!-- Team Details section CSS  -->
+    <link rel="stylesheet" href="./static/team-files/style.css">
+
+    <!-- Contact Form section CSS -->
 	<link rel="stylesheet" href="./static/contact-files/style2.css">
+	
+	<!-- Cursor Animation CSS -->
+	<link rel="stylesheet" href="./static/general/cursor.css">	
 
-	<!-- contains final edits for whole site -->
-	<link rel="stylesheet" href="./static/final.css">
 </head>
 
-<body class="dark">
+<body>
 
-	<div class="navigation-wrap bg-light start-header start-style">
-		<div class="container" style="float: right;">
-			<!-- <div class="row">
-				<div class="col-12"> -->
-					<nav class="navbar navbar-expand-md navbar-light">
+	    <!-- back to top -->
+	<button id="scrollBtn" title="Go to top" style="z-index: 6000; padding-top:20px;">&#8963;</button>
 
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
+    <!-- About Us Section -->
+    <div class="dark about-us-container">
+        <div class="navigation-wrap navdark bg-light start-header start-style">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-md navbar-light">
 
-						<div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 40%;">
-							<ul class="navbar-nav ml-auto py-4 py-md-0">
-								<li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-									<a class="nav-link" href="#0" style="font-size: large; ">Home</a>
-								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-									<a class="nav-link" href="#1" style="font-size: large; ">Events</a>
-								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-									<a class="nav-link" href="#2" style="font-size: large; ">Projects</a>
-								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-									<a class="nav-link" href="#3" style="font-size: large; ">Team Details</a>
-								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-									<a class="nav-link" href="#4" style="font-size: large; ">Contact Us</a>
-								</li>
-							</ul>
-						</div>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
 
-					</nav>
-				<!-- </div>
-			</div> -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 4%;">
+                                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                    <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                        <a class="nav-link" href="#about us" style="font-size: large; ">Home</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                        <a class="nav-link" href="#" style="font-size: large; ">Events</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                        <a class="nav-link" href="#" style="font-size: large; ">Projects</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                        <a class="nav-link" href="#" style="font-size: large; ">Team Details</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                        <a class="nav-link" href="#" style="font-size: large; ">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </nav>
+                    </div>
 		</div>
-	</div>
+        </div>
 
-	<section class="home" id="0">
+        <section class="home">
 
-	</section>
-	<div class="ercsvg"><img src="./static/about-us/ERC-name.svg"></div>
-	<div class="row" >
-		<div class="column ">
-			<img src="./static/about-us/Logo-circular.png" style="width:100% ; padding-top:22%;padding-bottom:15%;padding-left:22%;padding-right:15%">
-		</div>
-		<div class="column1 ">
-			<div class="abouttext col-md-12 col-12 " style="width:100% ; padding-top:10%; padding-right:7%; padding-left:7%; line-height:1.5em;">
-				Have you ever wanted to design a circuit by yourself or control your own bot? Well, you’ve come to the right place! Electronics and Robotics Club, an integral part of the Institute Technical Council, IIT Bombay, is the club that satiates the techie that you all possess. <br>
-				Our vision is to develop a powerful and remarkable technical community of students across all years and departments. We encourage every student to delve into tech and also provide you with a plethora of opportunities - be it, group discussions, hackathons, boot camps, GCs, expert-talks, or even various competitions. <br>
-				ERC was born from the two of its parent clubs(guess which? :P), 2017 being the year of christening. We encourage every one of you to tinker around and excel in your technical skills by performing hands-on experiments with the innumerable resources at your disposal. A perfect place for you to explore tech and tinker around!
-			</div>
-		</div>
+        </section>
+        <div class="ercsvg"><img src="./static/about-us/ERC-name.svg "></div>
+        <div class="row ">
+            <div class="column">
+                <div id="erc-logo-container">
+                    <div id="erc-logo">
+                        <img src="./static/about-us/erc-logo-background.jpg" id="main-logo">
+                        <img src="./static/about-us/erc-letters.png" id="letters">
+                    </div>
+                </div>
+            </div>
+            <div class="column1 ">
+                <div class="abouttext col-md-12 col-12" style="width:100% ;padding-right:20% ">
+					<div class="hover-enlarge hover-difference">
+					Have you ever wanted to design a circuit by yourself or control your own bot? Well, you’ve come to the right place! Electronics and Robotics Club, an integral part of the Institute Technical Council, IIT Bombay, is the club that satiates the techie that
+                    you all possess. Our vision is to develop a powerful and remarkable technical community of students across all years and departments. We encourage every student to delve into tech and also provide you with a plethora of opportunities-
+                    be it, group discussions, hackathons, boot camps, GCs, expert-talks, or even various competitions. The Electronics and Robotics Club was born from the two of its parent clubs(guess which? :P), 2017 being the year of christening. We
+                    encourage every one of you to tinker around and excel in your technical skills by performing hands-on experiments with the innumerable resources at your disposal. ERC is ever-ready to welcome new innovative ideas, contributions as
+					well as suggestions for its excellence. A perfect place for you to explore tech and tinker around!
+					</div>
+                </div>
+            </div>
 
-	</div>
+        </div>
+    </div>
 
 
-	<!-- Events Section  -->
-	<div class="event-container" id="1">
-		<div class="main-events">
-			<div class="background"></div>
-			<div class="title">Main Events</div>
-		</div>
-		<div class="event-border">
-			<div class="desktop-card desktop-card2">
-				<h2>XLR8 <i class="fas fa-arrow-right"></i>
-				</h2>
-				<p class='vertical'>Race to finish line!</p>
-				<p class='detail'>Your mission, should you choose to accept it, is to design a remote-controlled bot from scratch. Using your phone, you should be able to manoeuvre the bot safely through a track filled with a diverse set of obstacles. Be warned; The clock
-					is ticking!
-				</p>
-				<div class="pic" style="background-image: url('./static/events-and-projects/media/events/xlr8.jpg');"></div>
-				<ul>
-					<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-				</ul>
-				<button>
+    <!-- Events Section  -->
+    <div class="event-container" id="1">
+        <div class="main-events hover-enlarge hover-difference">
+            <div class="background"></div>
+            <div class="title">Main Events</div>
+        </div>
+        <div class="event-border">
+            <div class="desktop-card desktop-card2">
+                <h2>XLR8 <i class="fas fa-arrow-right"></i>
+                </h2>
+                <p class='vertical'>Race to finish line!</p>
+                <p class='detail'>Your mission, should you choose to accept it, is to design a remote-controlled bot from scratch. Using your phone, you should be able to manoeuvre the bot safely through a track filled with a diverse set of obstacles. Be warned; The clock
+                    is ticking!
+                </p>
+                <div class="pic" style="background-image: url('./static/events-and-projects/media/events/xlr8.gif');"></div>
+                <ul class='card-dots'>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button>
 			</button>
-				<button class='overlay'></button>
-			</div>
-			<div class="desktop-card">
-				<h2 class="large-head">Intro to Arduino <i class="fas fa-arrow-right"></i>
-				</h2>
-				<p class='vertical'>Ar-do-we-know? </p>
-				<p class='detail'>We organise the Arduino Bootcamp to get you started with programming in Arduino. Have no prior programming experience? No worries again, we’ll start from scratch and show you the power of Arduino with hands-on experience in the session.
+                <button class='overlay'></button>
+            </div>
+            <div class="desktop-card">
+                <h2 class="large-head">Intro to Arduino <i class="fas fa-arrow-right"></i>
+                </h2>
+                <p class='vertical'>Ar-do-we-know? </p>
+                <p class='detail'>We organise the Arduino Bootcamp to get you started with programming in Arduino. Have no prior programming experience? No worries again, we’ll start from scratch and show you the power of Arduino with hands-on experience in the session.
 
-				</p>
-				<div class="pic" style="background-image: url('./static/events-and-projects/media/events/arduino.png');"></div>
-				<ul>
-					<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-				</ul>
-				<button>
+                </p>
+                <div class="pic" style="background-image: url('./static/events-and-projects/media/events/arduino.png');"></div>
+                <ul class='card-dots'>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button>
 			</button>
-				<button class='overlay'></button>
-			</div>
-			<div class="desktop-card desktop-card2">
-				<h2 class="large-head">Line Follower <i class="fas fa-arrow-right"></i>
-				</h2>
-				<p class='vertical'>Be on the line!</p>
-				<p class='detail'> Remember that awesome bot you made during XLR8? Now it's time to teach your bot to think and make its own decisions!
-					<br> Now you have a modified mission- build an autonomous robot that can detect and follow a white path on a black backdrop-using the Arduino microcontroller!
-				</p>
-				<div class="pic" style="background-image: url('./static/events-and-projects/media/events/line.jpg');"></div>
-				<ul>
-					<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-				</ul>
-				<button>
+                <button class='overlay'></button>
+            </div>
+            <div class="desktop-card desktop-card2">
+                <h2 class="large-head">Line Follower <i class="fas fa-arrow-right"></i>
+                </h2>
+                <p class='vertical'>Be on the line!</p>
+                <p class='detail'> Remember that awesome bot you made during XLR8? Now it's time to teach your bot to think and make its own decisions!
+                    <br> Now you have a modified mission- build an autonomous robot that can detect and follow a white path on a black backdrop-using the Arduino microcontroller!
+                </p>
+                <div class="pic" style="background-image: url('./static/events-and-projects/media/events/line.gif');"></div>
+                <ul class='card-dots'>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button>
 			</button>
-				<button class='overlay'></button>
-			</div>
-			<div class="desktop-card">
-				<h2 class="large-head">Get Electrified!! <i class="fas fa-arrow-right"></i>
-				</h2>
-				<p class='vertical'>A trip to electronics.</p>
-				<p class='detail'>Really informative & fun hands-on sessions where we will give you an introduction to analog and digital electronics. In the analog session, we will implement circuits and see actual waveforms.</p>
-				<div class="pic" style="background-image: url('./static/events-and-projects/media/events/electrified.jpg');"></div>
-				<ul>
-					<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-				</ul>
-				<button>
+                <button class='overlay'></button>
+            </div>
+            <div class="desktop-card">
+                <h2 class="large-head">Get Electrified!! <i class="fas fa-arrow-right"></i>
+                </h2>
+                <p class='vertical'>A trip to electronics.</p>
+                <p class='detail'>Really informative & fun hands-on sessions where we will give you an introduction to analog and digital electronics. In the analog session, we will implement circuits and see actual waveforms.</p>
+                <div class="pic" style="background-image: url('./static/events-and-projects/media/events/electrified.jpg');"></div>
+                <ul class='card-dots'>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button>
 			</button>
-				<button class='overlay'></button>
+                <button class='overlay'></button>
 
-			</div>
-			<div class='mobile-events-container'>
-				<div class="event-slideshow-container" id="event-slideshow-container">
-					<div class="eventSlides show fade" onclick="currentSlide(0)">
-						<div class="card text-center" style="overflow:hidden">
-							<div class="card-img-top" style="background-image: url('./static/events-and-projects/media/events/xlr8.jpg');"> </div>
-							<div class="card-body">
-								<h5>XLR8</h5>
-								<h6 class="card-subtitle mb-2 text-muted">Race to finish line!</h6>
-								<p class="card-text hide">Your mission, should you choose to accept it, is to design a remote-controlled bot from scratch. Using your phone, you should be able to manoeuvre the bot safely through a track filled with a diverse set of obstacles.
-									<br>Be warned; The clock is ticking!</p>
-							</div>
-						</div>
-					</div>
-					<div class="eventSlides show fade" onclick="currentSlide(1)">
-						<div class="card text-center" style="overflow:hidden">
-							<div class="card-img-top" style="background-image: url('./static/events-and-projects/media/events/arduino.png');"> </div>
-							<div class="card-body">
-								<h5>Intro to Arduino </h5>
-								<h6 class="card-subtitle mb-2 text-muted">Ar-do-we-know?</h6>
-								<p class="card-text hide">We organise the Arduino Bootcamp to get you started with programming in Arduino. Have no prior programming experience? No worries again, we’ll start from scratch and show you the power of Arduino with hands-on experience in
-									the session.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="eventSlides show fade" onclick="currentSlide(2)">
-						<div class="card text-center" style="overflow:hidden">
-							<div class="card-img-top" style="background-image: url('./static/events-and-projects/media/events/line.jpg');"> </div>
-							<div class="card-body">
-								<h5>Line Follower</h5>
-								<h6 class="card-subtitle mb-2 text-muted">Be on the line!</h6>
-								<p class="card-text hide">Remember that awesome bot you made during XLR8? Now it's time to teach your bot to think and make its own decisions!
-									<br> Now you have a modified mission- build an autonomous robot that can detect and follow a white path on a black backdrop-using the Arduino microcontroller!</p>
-							</div>
-						</div>
-					</div>
-					<div class="eventSlides show fade" onclick="currentSlide(3)">
-						<div class="card text-center" style="overflow:hidden">
-							<div class="card-img-top" style="background-image: url('./static/events-and-projects/media/events/electrified.jpg');"> </div>
-							<div class="card-body">
-								<h5>Get Electrified!!</h5>
-								<h6 class="card-subtitle mb-2 text-muted">A trip to electronics.</h6>
-								<p class="card-text hide">Really informative & fun hands-on sessions where we will give you an introduction to analog and digital electronics. In the analog session, we will implement circuits and see actual waveforms.</p>
-							</div>
-						</div>
-					</div>
-				</div>
+            </div>
+            <div class='mobile-events-container'>
+                <div class="event-slideshow-container" id="event-slideshow-container">
+                    <div class="eventSlides show fade" onclick="currenteventSlide(0)">
+                        <div class="card text-left" style="overflow:hidden">
+                            <div class="card-img-top" style="background-image: url('./static/events-and-projects/media/events/xlr8.gif');"> </div>
+                            <div class="card-body">
+                                <h5>XLR8</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Race to finish line!</h6>
+                                <p class="card-text hide">Your mission, should you choose to accept it, is to design a remote-controlled bot from scratch. Using your phone, you should be able to manoeuvre the bot safely through a track filled with a diverse set of obstacles.
+                                    <br>Be warned; The clock is ticking!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventSlides show fade" onclick="currenteventSlide(1)">
+                        <div class="card text-left" style="overflow:hidden">
+                            <div class="card-img-top" style="background-image: url('./static/events-and-projects/media/events/arduino.png');"> </div>
+                            <div class="card-body">
+                                <h5>Intro to Arduino </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Ar-do-we-know?</h6>
+                                <p class="card-text hide">We organise the Arduino Bootcamp to get you started with programming in Arduino. Have no prior programming experience? No worries again, we’ll start from scratch and show you the power of Arduino with hands-on experience
+                                    in the session.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventSlides show fade" onclick="currenteventSlide(2)">
+                        <div class="card text-left" style="overflow:hidden">
+                            <div class="card-img-top" style="background-image: url('./static/events-and-projects/media/events/line.gif');"> </div>
+                            <div class="card-body">
+                                <h5>Line Follower</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Be on the line!</h6>
+                                <p class="card-text hide">Remember that awesome bot you made during XLR8? Now it's time to teach your bot to think and make its own decisions!
+                                    <br> Now you have a modified mission- build an autonomous robot that can detect and follow a white path on a black backdrop-using the Arduino microcontroller!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventSlides show fade" onclick="currenteventSlide(3)">
+                        <div class="card text-left" style="overflow:hidden">
+                            <div class="card-img-top" style="background-image: url('./static/events-and-projects/media/events/electrified.jpg');"> </div>
+                            <div class="card-body">
+                                <h5>Get Electrified!!</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">A trip to electronics.</h6>
+                                <p class="card-text hide">Really informative & fun hands-on sessions where we will give you an introduction to analog and digital electronics. In the analog session, we will implement circuits and see actual waveforms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<!-- The eventDots/circles -->
-					<div class="eventDot-box text-center">
-						<span class="eventDot" onclick="currentSlide(0)"></span>
-						<span class="eventDot" onclick="currentSlide(1)"></span>
-						<span class="eventDot" onclick="currentSlide(2)"></span>
-						<span class="eventDot" onclick="currentSlide(3)"></span>
-					</div>
-			</div>
-		</div>
-	</div>
+                <!-- The eventDots/circles -->
+                <div class="eventDot-box text-center">
+                    <span class="eventDot" onclick="currenteventSlide(0)"></span>
+                    <span class="eventDot" onclick="currenteventSlide(1)"></span>
+                    <span class="eventDot" onclick="currenteventSlide(2)"></span>
+                    <span class="eventDot" onclick="currenteventSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-	<!-- Projects Section  -->
-	<div class="project-container" id="2">
-		<div class="main-projects">
-			<div class="background"></div>
-			<div class="title">Main Projects</div>
-		</div>
-		
-		<div class="project-border">
-			<div class="desktop-card desktop-card2">
-				<h2 class="large-head">Drone Delivery<i class="fas fa-arrow-right"></i>
-				</h2>
-				<p class='vertical'>New generation</p>
-				<div class='detail'>
-					<!-- <b>Team Crusaders</b> -->
-					Automized Drone which can deliver essential goods and products from one location to another in the Covid-19 Pandemic.
-					<li>Simulation of a multi-drone system in gazebo. </li>
-					<li>Capability tp handling simultaneous deliveries with multiple drones. </li>
-					<li>Web app that is able to automatically assign drones. </li>
-				</div>
-				<div class="pic" style="background-image: url('./static/events-and-projects/media/projects/drone2.png');"></div>
-				<ul>
-					<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-				</ul>
-				<button>
+    <!-- Projects Section  -->
+    <div class="project-container" id="2">
+        <div class="main-projects hover-enlarge hover-difference">
+            <div class="background"></div>
+            <div class="title">Main Projects</div>
+        </div>
+
+        <div class="project-border">
+            <div class="desktop-card desktop-card2">
+                <h2 class="large-head">Drone Delivery<i class="fas fa-arrow-right"></i>
+                </h2>
+                <p class='vertical'>New generation</p>
+                <div class='detail'>
+                    <!-- <b>Team Crusaders</b> -->
+                    Automized Drone which can deliver essential goods and products from one location to another in the Covid-19 Pandemic.
+                    <ul>
+                        <li>Simulation of a multi-drone system in gazebo. </li>
+                        <li>Capable of handling simultaneous deliveries with multiple drones. </li>
+                        <!-- <li>Web app that is able to automatically assign drones. </li> -->
+                    </ul>
+                </div>
+                <div class="pic" style="background-image: url('./static/events-and-projects/media/projects/drone2.png');"></div>
+                <ul class='card-dots'>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button>
 				</button>
-					<button class='overlay'></button>
-			</div>
-			<div class="desktop-card">
-				<h2 class="large-head">Wall climbing Bot
-					<i class="fas fa-arrow-right"></i>
-				</h2>
-				<p class='vertical'>The Fifth Sense
-				</p>
-				<p class='detail'>A wall-climbing robot to perform a smooth floor-to-wall transition, stick to the wall using the lift force generated by the propeller attached to the BLDC motor and navigate seamlessly on the surface of the wall by detecting obstacles.
+                <button class='overlay'></button>
+            </div>
+            <div class="desktop-card">
+                <h2 class="large-head">Wall climbing Bot
+                    <i class="fas fa-arrow-right"></i>
+                </h2>
+                <p class='vertical'>The Fifth Sense
+                </p>
+                <p class='detail'>A wall-climbing robot to perform a smooth floor-to-wall transition, stick to the wall using the lift force generated by the propeller attached to the BLDC motor and navigate seamlessly on the surface of the wall by detecting obstacles.
 
 
-				</p>
-				<div class="pic" style="background-image: url('./static/events-and-projects/media/projects/wall.gif');"></div>
-				<ul>
-					<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-				</ul>
-				<button>
+                </p>
+                <div class="pic" style="background-image: url('./static/events-and-projects/media/projects/wall.gif');"></div>
+                <ul class='card-dots'>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button>
 			</button>
-				<button class='overlay'></button>
-			</div>
-			<div class="desktop-card desktop-card2">
-				<h2 class="large-head">Robotex Line<br> Follower<i class="fas fa-arrow-right"></i>
-				</h2>
-				<p class='vertical'>LEGO!</p>
-				<p class='detail'>
-					The task was to make the Fastest Line Follower. .The PS was solved by the team by implementing PID and making bot as light-weighted as possible. Keeping this in mind , the team chose Pololu Micro Motors for its weight , high RPM and small size.
-				</p>
-				<div class="pic" style="background-image: url('./static/events-and-projects/media/projects/line.jpg');"></div>
-				<ul>
-					<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-				</ul>
-				<button>
+                <button class='overlay'></button>
+            </div>
+            <div class="desktop-card desktop-card2">
+                <h2 class="large-head">Robotex Line<br> Follower<i class="fas fa-arrow-right"></i>
+                </h2>
+                <p class='vertical'>LEGO!</p>
+                <p class='detail'>
+                    The task was to make the Fastest Line Follower. .The PS was solved by the team by implementing PID and making bot as light-weighted as possible. Keeping this in mind , the team chose Pololu Micro Motors for its weight , high RPM and small size.
+                </p>
+                <div class="pic" style="background-image: url('./static/events-and-projects/media/projects/line.jpg');"></div>
+                <ul class='card-dots'>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button>
 			</button>
-				<button class='overlay'></button>
+                <button class='overlay'></button>
 
-			</div>
-			<div class="desktop-card">
-				<h2 class="large-head">Smart Suitcase
-					<i class="fas fa-arrow-right"></i>
-				</h2>
-				<p class='vertical' "> Style meets comfort
+            </div>
+            <div class="desktop-card">
+                <h2 class="large-head">Smart Suitcase
+                    <i class="fas fa-arrow-right"></i>
+                </h2>
+                <p class='vertical' "> Style meets comfort
 				</p>
-				<p class='detail'> Smarty is a next-gen suitcase which contacts you whenever and wherever you want. Smarty will follow you around and prevent your suitcase from being robbed and also will feel you burden free xD!
-					<br>-> Hands-Free Control
-					<br>-> Smart Obstacle Avoidance
-					<br>-> Intelligent Tracking
-				</p>
+				<div class='detail'> 
+					Smarty is a next-gen suitcase which contacts you whenever and wherever you want. 
+					Smarty will follow you around and prevent your suitcase from being robbed and also will feel you burden free xD!
+					<ul>
+						<li> Hands-Free Control</li>
+						<li> Smart Obstacle Avoidance</li>
+						<li> Intelligent Tracking</li>
+					</ul>	
+				</div>
+
 				<div class="pic " style="background-image: url( './static/events-and-projects/media/projects/suit.png'); "></div>
-				<ul>
+				<ul class='card-dots'>
 					<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
 				</ul>
 				<button>
@@ -303,9 +961,9 @@
 			</div>
 
 			<div class='mobile-projects-container'>
-				<div class="project-slideshow-container " id="project-slideshow-container">
+				<div class="project-slideshow-container " id='project-slideshow-container'>
 					<div class="projectSlides show fade " onclick="currentSlide(0) ">
-						<div class="card text-center " style="overflow:hidden ">
+						<div class="card text-left " style="overflow:hidden ">
 							<div class="card-img-top " style="background-image: url( './static/events-and-projects/media/projects/drone2.png'); "> </div>
 							<div class="card-body ">
 								<h5>Drone Delivery</h5>
@@ -313,15 +971,17 @@
 								<div class="card-text hide ">
 									<!-- <b>Team Crusaders</b> -->
 									Automized Drone which can deliver essential goods and products from one location to another in the Covid-19 Pandemic.
+									<ul>
 									<li>Simulation of a multi-drone system in gazebo. </li>
-									<li>Capability tp handling simultaneous deliveries with multiple drones. </li>
+									<li>Capability of handling simultaneous deliveries with multiple drones. </li>
 									<li>Web app that is able to automatically assign drones. </li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="projectSlides show fade " onclick="currentSlide(1) ">
-						<div class="card text-center " style="overflow:hidden ">
+						<div class="card text-left " style="overflow:hidden ">
 							<div class="card-img-top " style="background-image: url( './static/events-and-projects/media/projects/wall.gif'); "> </div>
 							<div class="card-body ">
 								<h5>Wall climbing Bot</h5>
@@ -335,7 +995,7 @@
 						</div>
 					</div>
 					<div class="projectSlides show fade " onclick="currentSlide(2) ">
-						<div class="card text-center " style="overflow:hidden ">
+						<div class="card text-left " style="overflow:hidden ">
 							<div class="card-img-top " style="background-image: url( './static/events-and-projects/media/projects/line.jpg'); "> </div>
 							<div class="card-body ">
 								<h5 style="font-size: 23px; ">Robotex Line Follower</h5>
@@ -346,16 +1006,18 @@
 						</div>
 					</div>
 					<div class="projectSlides show fade " onclick="currentSlide(3) ">
-						<div class="card text-center " style="overflow:hidden ">
+						<div class="card text-left " style="overflow:hidden ">
 							<div class="card-img-top " style="background-image: url( './static/events-and-projects/media/projects/suit.png'); "> </div>
 							<div class="card-body ">
 								<h5>Smart Suitcase</h5>
 								<h6 class="card-subtitle mb-2 text-muted ">Where style meets comfort</h6>
-								<p class="card-text hide ">Smarty is a next-gen suitcase which contacts you whenever and wherever you want. Smarty will follow you around and prevent your suitcase from being robbed and also will feel you burden free xD!
-									<br>-> Hands-Free Control
-									<br>-> Smart Obstacle Avoidance
-									<br>-> Intelligent Tracking
-								</p>
+								<div class="card-text hide ">Smarty is a next-gen suitcase which contacts you whenever and wherever you want. Smarty will follow you around and prevent your suitcase from being robbed and also will feel you burden free xD!
+									<ul>
+									<li> Hands-Free Control</li>
+									<li> Smart Obstacle Avoidance</li>
+									<li> Intelligent Tracking</li>
+								</ul>
+							</div>
 							</div>
 						</div>
 					</div>
@@ -375,22 +1037,22 @@
 
 
 	<!-- Teams Section  -->
-	<div class="team-section" id="3">
-		<div class="team-head background-parallax">
+	<div class="team-section " id="3 ">
+		<div class="team-head background-parallax hover-enlarge hover-difference">
 			<h2>Meet the Team</h2>
 		</div>
-		<div class="team-content">
-			<div class="team-content-mangrs">
-				<div class="team-contact-card">
-					<div class="team-member-img">
-						<div class="team-member-contact">
-							<a href="https://www.facebook.com/shub.mark42/"><i class="fab fa-facebook-f"></i></a>
-							<a href="https://www.linkedin.com/in/lohiya-shubham/"><i class="fab fa-linkedin-in"></i></a>
-							<a href="https://github.com/shubhlohiya"><i class="fab fa-github"></i></a>
-							<!-- <a href="https://www.instagram.com/shubhamlohiya_/"><i class="fab fa-instagram"></i></a> -->
-							<a href="mailto:shubhlohiya.14@gmail.com"><i class="far fa-envelope"></i></a>
+		<div class="team-content ">
+			<div class="team-content-mangrs ">
+				<div class="team-contact-card ">
+					<div class="team-member-img ">
+						<div class="team-member-contact ">
+							<a href="https://www.facebook.com/shub.mark42/ "><i class="fab fa-facebook-f "></i></a>
+							<a href="https://www.linkedin.com/in/lohiya-shubham/ "><i class="fab fa-linkedin-in "></i></a>
+							<a href="https://github.com/shubhlohiya "><i class="fab fa-github "></i></a>
+							<!-- <a href="https://www.instagram.com/shubhamlohiya_/ "><i class="fab fa-instagram "></i></a> -->
+							<a href="mailto:shubhlohiya.14@gmail.com "><i class="far fa-envelope "></i></a>
 						</div>
-						<img src="./static/team-files/media/lohiya.jpg" alt="Shubham Lohiya's Image">
+						<img src="./static/team-files/media/lohiya.jpg " alt="Shubham Lohiya 's Image">
 					</div>
 					<div class="team-member-name">Shubham Lohiya</div>
 					<div class="team-member-pos">Institute Secretary</div>
@@ -404,24 +1066,24 @@
 								<!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
 								<a href="mailto:shubhamagr281999@gmail.com"><i class="far fa-envelope"></i></a>
 							</div>
-						<img src="./static/team-files/media/agrawal.jpg" alt="Shubham Agrawal's Image">
+						<img src="./static/team-files/media/agrawal.jpg" alt="Shubham Agrawal's Image ">
 					</div>
-					<div class="team-member-name">Shubham Agrawal</div>
-					<div class="team-member-pos">Manager</div>
+					<div class="team-member-name ">Shubham Agrawal</div>
+					<div class="team-member-pos ">Manager</div>
 				</div>
 			</div>
-			<div class="team-content-cons-enthus">
-				<!-- <div class="team-convener-row"> -->
-					<div class="team-contact-card">
-						<div class="team-member-img">
-							<div class="team-member-contact">
-								<a href="https://www.facebook.com/profile.php?id=100006143535083"><i class="fab fa-facebook-f"></i></a>
-								<a href="https://www.linkedin.com/in/sharvaree-sinkar-617b65191"><i class="fab fa-linkedin-in"></i></a>
-								<a href="https://github.com/sharvaree1921"><i class="fab fa-github"></i></a>
-								<!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
-								<a href="mailto:sharvareesinkar21@gmail.com"><i class="far fa-envelope"></i></a>
+			<div class="team-content-cons-enthus ">
+				<!-- <div class="team-convener-row "> -->
+					<div class="team-contact-card ">
+						<div class="team-member-img ">
+							<div class="team-member-contact ">
+								<a href="https://www.facebook.com/profile.php?id=100006143535083 "><i class="fab fa-facebook-f "></i></a>
+								<a href="https://www.linkedin.com/in/sharvaree-sinkar-617b65191 "><i class="fab fa-linkedin-in "></i></a>
+								<a href="https://github.com/sharvaree1921 "><i class="fab fa-github "></i></a>
+								<!-- <a href="# "><i class="fab fa-instagram "></i></a> -->
+								<a href="mailto:sharvareesinkar21@gmail.com "><i class="far fa-envelope "></i></a>
 							</div>
-							<img src="./static/team-files/media/sharvaree.jpg" alt="Sharvaree Sinkar's Image">
+							<img src="./static/team-files/media/sharvaree.jpg " alt="Sharvaree Sinkar 's Image">
 						</div>
 						<div class="team-member-name">Sharvaree Sinkar</div>
 						<div class="team-member-pos">Convener</div>
@@ -435,21 +1097,21 @@
 								<!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
 								<a href="mailto:mail4harshit1@gmail.com"><i class="far fa-envelope"></i></a>
 							</div>
-							<img src="./static/team-files/media/harshit.jpg" alt="Harshit Gupta's Image">
+							<img src="./static/team-files/media/harshit.jpg" alt="Harshit Gupta's Image ">
 						</div>
-						<div class="team-member-name">Harshit Gupta</div>
-						<div class="team-member-pos">Convener</div>
+						<div class="team-member-name ">Harshit Gupta</div>
+						<div class="team-member-pos ">Convener</div>
 					</div>
-					<div class="team-contact-card">
-						<div class="team-member-img">
-							<div class="team-member-contact">
-								<a href="https://www.facebook.com/shubham.ojha.90/"><i class="fab fa-facebook-f"></i></a>
-								<a href="https://www.linkedin.com/in/shubham-ojha-80b52a1a9/"><i class="fab fa-linkedin-in"></i></a>
-								<a href="https://github.com/CommanderBaman"><i class="fab fa-github"></i></a>
-								<!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
-								<a href="mailto:shubhamojha18@gmail.com"><i class="far fa-envelope"></i></a>
+					<div class="team-contact-card ">
+						<div class="team-member-img ">
+							<div class="team-member-contact ">
+								<a href="https://www.facebook.com/shubham.ojha.90/ "><i class="fab fa-facebook-f "></i></a>
+								<a href="https://www.linkedin.com/in/shubham-ojha-80b52a1a9/ "><i class="fab fa-linkedin-in "></i></a>
+								<a href="https://github.com/CommanderBaman "><i class="fab fa-github "></i></a>
+								<!-- <a href="# "><i class="fab fa-instagram "></i></a> -->
+								<a href="mailto:shubhamojha18@gmail.com "><i class="far fa-envelope "></i></a>
 							</div>
-							<img src="./static/team-files/media/ojha.jpg" alt="Shubham Ojha's Image">
+							<img src="./static/team-files/media/ojha.jpg " alt="Shubham Ojha 's Image">
 						</div>
 						<div class="team-member-name">Shubham Ojha</div>
 						<div class="team-member-pos">Convener</div>
@@ -463,21 +1125,21 @@
 								<!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
 								<a href="mailto:jay.sonawane.iitb@gmail.com"><i class="far fa-envelope"></i></a>
 							</div>
-							<img src="./static/team-files/media/jay.jpg" alt="Jay Sonawane's Image">
+							<img src="./static/team-files/media/jay.jpg" alt="Jay Sonawane's Image ">
 						</div>
-						<div class="team-member-name">Jay Sonawane</div>
-						<div class="team-member-pos">Convener</div>
+						<div class="team-member-name ">Jay Sonawane</div>
+						<div class="team-member-pos ">Convener</div>
 					</div>
-					<div class="team-contact-card">
-						<div class="team-member-img">
-							<div class="team-member-contact">
-								<a href="https://www.facebook.com/leena.chaudhari.902266"><i class="fab fa-facebook-f"></i></a>
-								<a href="https://www.linkedin.com/in/leena-chaudhari-7666521b4/"><i class="fab fa-linkedin-in"></i></a>
-								<!-- <a href="#"><i class="fab fa-github"></i></a> -->
-								<!-- <a href="https://www.instagram.com/leena.chaudhari10/"><i class="fab fa-instagram"></i></a> -->
-								<a href="mailto:leenachaudhari123@gmail.com"><i class="far fa-envelope"></i></a>
+					<div class="team-contact-card ">
+						<div class="team-member-img ">
+							<div class="team-member-contact ">
+								<a href="https://www.facebook.com/leena.chaudhari.902266 "><i class="fab fa-facebook-f "></i></a>
+								<a href="https://www.linkedin.com/in/leena-chaudhari-7666521b4/ "><i class="fab fa-linkedin-in "></i></a>
+								<!-- <a href="# "><i class="fab fa-github "></i></a> -->
+								<!-- <a href="https://www.instagram.com/leena.chaudhari10/ "><i class="fab fa-instagram "></i></a> -->
+								<a href="mailto:leenachaudhari123@gmail.com "><i class="far fa-envelope "></i></a>
 							</div>
-							<img src="./static/team-files/media/leena.jpeg" alt="Leena Chaudhari's Image">
+							<img src="./static/team-files/media/leena.jpeg " alt="Leena Chaudhari 's Image">
 						</div>
 						<div class="team-member-name">Leena Chaudhari</div>
 						<div class="team-member-pos">Convener</div>
@@ -493,21 +1155,21 @@
 								<!-- <a href="https://www.instagram.com/nitish110511/"><i class="fab fa-instagram"></i></a> -->
 								<a href="mailto:nitishagrawal612@gmail.com"><i class="far fa-envelope"></i></a>
 							</div>
-							<img src="./static/team-files/media/nitish.jpg" alt="Nitish Agrawal's Image">
+							<img src="./static/team-files/media/nitish.jpg" alt="Nitish Agrawal's Image ">
 						</div>
-						<div class="team-member-name">Nitish Agrawal</div>
-						<div class="team-member-pos">Convener</div>
+						<div class="team-member-name ">Nitish Agrawal</div>
+						<div class="team-member-pos ">Convener</div>
 					</div>
-					<div class="team-contact-card">
-						<div class="team-member-img">
-							<div class="team-member-contact">
-								<a href="https://www.facebook.com/profile.php?id=100039792470180"><i class="fab fa-facebook-f"></i></a>
-								<a href="https://in.linkedin.com/in/saket-kumar-a914bb1aa"><i class="fab fa-linkedin-in"></i></a>
-								<a href="https://github.com/saket349"><i class="fab fa-github"></i></a>
-								<!-- <a href="https://www.instagram.com/saket.kumar.singh/"><i class="fab fa-instagram"></i></a> -->
-								<a href="mailto:saket.1999bksc@gmail.com"><i class="far fa-envelope"></i></a>
+					<div class="team-contact-card ">
+						<div class="team-member-img ">
+							<div class="team-member-contact ">
+								<a href="https://www.facebook.com/profile.php?id=100039792470180 "><i class="fab fa-facebook-f "></i></a>
+								<a href="https://in.linkedin.com/in/saket-kumar-a914bb1aa "><i class="fab fa-linkedin-in "></i></a>
+								<a href="https://github.com/saket349 "><i class="fab fa-github "></i></a>
+								<!-- <a href="https://www.instagram.com/saket.kumar.singh/ "><i class="fab fa-instagram "></i></a> -->
+								<a href="mailto:saket.1999bksc@gmail.com "><i class="far fa-envelope "></i></a>
 							</div>
-							<img src="./static/team-files/media/saket.jpg" alt="Saket Kumar's Image">
+							<img src="./static/team-files/media/saket.jpg " alt="Saket Kumar 's Image">
 						</div>
 						<div class="team-member-name">Saket Kumar</div>
 						<div class="team-member-pos">Convener</div>
@@ -521,21 +1183,21 @@
 								<!-- <a href="https://www.instagram.com/_._aneesh_.__/"><i class="fab fa-instagram"></i></a> -->
 								<a href="mailto:venkatasaianeesh@gmail.com"><i class="far fa-envelope"></i></a>
 							</div>
-							<img src="./static/team-files/media/aneesh.jpg" alt="Sai Aneesh's Image">
+							<img src="./static/team-files/media/aneesh.jpg" alt="Sai Aneesh's Image ">
 						</div>
-						<div class="team-member-name" id="long-name">Sai Aneesh Suryadevara</div>
-						<div class="team-member-pos">Convener</div>
+						<div class="team-member-name " id="long-name ">Sai Aneesh Suryadevara</div>
+						<div class="team-member-pos ">Convener</div>
 					</div>
-					<div class="team-contact-card">
-						<div class="team-member-img">
-							<div class="team-member-contact">
-								<a href="https://www.facebook.com/tejal.barnwal"><i class="fab fa-facebook-f"></i></a>
-								<a href="https://www.linkedin.com/in/tejal-ashwini-barnwal-1a149389/"><i class="fab fa-linkedin-in"></i></a>
-								<a href="https://github.com/tejalbarnwal"><i class="fab fa-github"></i></a>
-								<!-- <a href="https://www.instagram.com/radianttb/"><i class="fab fa-instagram"></i></a> -->
-								<a href="mailto:tejalbarnwal@gmail.com"><i class="far fa-envelope"></i></a>
+					<div class="team-contact-card ">
+						<div class="team-member-img ">
+							<div class="team-member-contact ">
+								<a href="https://www.facebook.com/tejal.barnwal "><i class="fab fa-facebook-f "></i></a>
+								<a href="https://www.linkedin.com/in/tejal-ashwini-barnwal-1a149389/ "><i class="fab fa-linkedin-in "></i></a>
+								<a href="https://github.com/tejalbarnwal "><i class="fab fa-github "></i></a>
+								<!-- <a href="https://www.instagram.com/radianttb/ "><i class="fab fa-instagram "></i></a> -->
+								<a href="mailto:tejalbarnwal@gmail.com "><i class="far fa-envelope "></i></a>
 							</div>
-							<img src="./static/team-files/media/tejal.jpg" alt="Tejal Barnwal's Image">
+							<img src="./static/team-files/media/tejal.jpg " alt="Tejal Barnwal 's Image">
 						</div>
 						<div class="team-member-name">Tejal Barnwal</div>
 						<div class="team-member-pos">Enthusiast</div>
@@ -551,21 +1213,21 @@
 								<!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
 								<a href="mailto:paarthj3@gmail.com"><i class="far fa-envelope"></i></a>
 							</div>
-							<img src="./static/team-files/media/paarth.jpeg" alt="Paarth Jain's Image">
+							<img src="./static/team-files/media/paarth.jpeg" alt="Paarth Jain's Image ">
 						</div>
-						<div class="team-member-name">Paarth Jain</div>
-						<div class="team-member-pos">Enthusiast</div>
+						<div class="team-member-name ">Paarth Jain</div>
+						<div class="team-member-pos ">Enthusiast</div>
 					</div>
-					<div class="team-contact-card">
-						<div class="team-member-img">
-							<div class="team-member-contact">
-								<a href="https://www.facebook.com/profile.php?id=100039850905970"><i class="fab fa-facebook-f"></i></a>
-								<!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
-								<a href="https://github.com/Riyaagrawal2001"><i class="fab fa-github"></i></a>
-								<!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
-								<a href="mailto:agrawalria2001@gmail.com"><i class="far fa-envelope"></i></a>
+					<div class="team-contact-card ">
+						<div class="team-member-img ">
+							<div class="team-member-contact ">
+								<a href="https://www.facebook.com/profile.php?id=100039850905970 "><i class="fab fa-facebook-f "></i></a>
+								<!-- <a href="# "><i class="fab fa-linkedin-in "></i></a> -->
+								<a href="https://github.com/Riyaagrawal2001 "><i class="fab fa-github "></i></a>
+								<!-- <a href="# "><i class="fab fa-instagram "></i></a> -->
+								<a href="mailto:agrawalria2001@gmail.com "><i class="far fa-envelope "></i></a>
 							</div>
-							<img src="./static/team-files/media/riya.jpg" alt="Riya Agrawal's Image">
+							<img src="./static/team-files/media/riya.jpg " alt="Riya Agrawal 's Image">
 						</div>
 						<div class="team-member-name">Riya Agrawal</div>
 						<div class="team-member-pos">Enthusiast</div>
@@ -579,21 +1241,21 @@
 								<!-- <a href="https://www.instagram.com/_hashbrowny_"><i class="fab fa-instagram"></i></a> -->
 								<a href="mailto:yashgmitkari@gmail.com"><i class="far fa-envelope"></i></a>
 							</div>
-							<img src="./static/team-files/media/yash.jpg" alt="Yash Mitkari's Image">
+							<img src="./static/team-files/media/yash.jpg" alt="Yash Mitkari's Image ">
 						</div>
-						<div class="team-member-name">Yash Mitkari</div>
-						<div class="team-member-pos">Enthusiast</div>
+						<div class="team-member-name ">Yash Mitkari</div>
+						<div class="team-member-pos ">Enthusiast</div>
 					</div>
-					<div class="team-contact-card">
-						<div class="team-member-img">
-							<div class="team-member-contact">
-								<a href="https://www.facebook.com/saketika.chekuri.18/"><i class="fab fa-facebook-f"></i></a>
-								<a href="https://www.linkedin.com/in/saketika-chekuri-b1ba861b1/"><i class="fab fa-linkedin-in"></i></a>
-								<a href="https://github.com/saketikachekuri"><i class="fab fa-github"></i></a>
-								<!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
-								<a href="mailto:saketikachekuri@gmail.com"><i class="far fa-envelope"></i></a>
+					<div class="team-contact-card ">
+						<div class="team-member-img ">
+							<div class="team-member-contact ">
+								<a href="https://www.facebook.com/saketika.chekuri.18/ "><i class="fab fa-facebook-f "></i></a>
+								<a href="https://www.linkedin.com/in/saketika-chekuri-b1ba861b1/ "><i class="fab fa-linkedin-in "></i></a>
+								<a href="https://github.com/saketikachekuri "><i class="fab fa-github "></i></a>
+								<!-- <a href="# "><i class="fab fa-instagram "></i></a> -->
+								<a href="mailto:saketikachekuri@gmail.com "><i class="far fa-envelope "></i></a>
 							</div>
-							<img src="./static/team-files/media/saketika.jpg" alt="Saketika's Image">
+							<img src="./static/team-files/media/saketika.jpg " alt="Saketika 's Image">
 						</div>
 						<div class="team-member-name">Sai Saketika Chekuri</div>
 						<div class="team-member-pos">Enthusiast</div>
@@ -607,21 +1269,21 @@
 								<!-- <a href="https://www.instagram.com/sahasraranjan/"><i class="fab fa-instagram"></i></a> -->
 								<a href="mailto:sahasraranjan@gmail.com"><i class="far fa-envelope"></i></a>
 							</div>
-							<img src="./static/team-files/media/sahasra.jpg" alt="Sahasra Ranjan's Image">
+							<img src="./static/team-files/media/sahasra.jpg" alt="Sahasra Ranjan's Image ">
 						</div>
-						<div class="team-member-name">Sahasra Ranjan</div>
-						<div class="team-member-pos">Enthusiast</div>
+						<div class="team-member-name ">Sahasra Ranjan</div>
+						<div class="team-member-pos ">Enthusiast</div>
 					</div>
-					<div class="team-contact-card">
-						<div class="team-member-img">
-							<div class="team-member-contact">
-								<a href="https://facebook.com/blankhhh"><i class="fab fa-facebook-f"></i></a>
-								<a href="https://www.linkedin.com/in/sidharth-mundhra-9708b0194/"><i class="fab fa-linkedin-in"></i></a>
-								<a href="https://github.com/0sidharth"><i class="fab fa-github"></i></a>
-								<!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
-								<a href="mailto:sidharthmundhra16@gmail.com"><i class="far fa-envelope"></i></a>
+					<div class="team-contact-card ">
+						<div class="team-member-img ">
+							<div class="team-member-contact ">
+								<a href="https://facebook.com/blankhhh "><i class="fab fa-facebook-f "></i></a>
+								<a href="https://www.linkedin.com/in/sidharth-mundhra-9708b0194/ "><i class="fab fa-linkedin-in "></i></a>
+								<a href="https://github.com/0sidharth "><i class="fab fa-github "></i></a>
+								<!-- <a href="# "><i class="fab fa-instagram "></i></a> -->
+								<a href="mailto:sidharthmundhra16@gmail.com "><i class="far fa-envelope "></i></a>
 							</div>
-							<img src="./static/team-files/media/sidharth.jpg" alt="Sidharth Mundhra's Image">
+							<img src="./static/team-files/media/sidharth.jpg " alt="Sidharth Mundhra 's Image">
 						</div>
 						<div class="team-member-name">Sidharth Mundhra</div>
 						<div class="team-member-pos">Enthusiast</div>
@@ -635,15 +1297,15 @@
 	<!-- Contact Form  -->
 	<div class="contact-section" id="4">
 		<div class="contact-details">
-			<p id="contact-text">
+			<p id="contact-text" class="hover-difference">
 				Get directly in touch with us:
 			</p>
-			<div class="contact-icons">
+			<div class="contact-icons hover-difference">
 				<a href="https://www.facebook.com/erciitb"><i class="fab fa-facebook-square"></i></a>
 				<a href="https://www.instagram.com/erc.iitb/"><i class="fab fa-instagram"></i></a>
 				<a href="mailto:erciitbombay@gmail.com"><i class="far fa-envelope"></i></a>
 			</div>
-			<a href="mailto:elecrobo.club@iitb.ac.in" id="contact-mail">elecrobo.club@iitb.ac.in</a>
+			<a href="mailto:elecrobo.club@iitb.ac.in" id="contact-mail" class="hover-difference">elecrobo.club@iitb.ac.in</a>
 			<button class="contact-form-button">
 				Message us
 			</button>
@@ -679,65 +1341,25 @@
 			</div>
 		</div>
 	</div>
+	
+	<!-- For Scroll bot -->
+	<div id="scroll-bot">
+		<img src="./static/about-us/scroll-bot.png" alt="">
+	</div>
+	<div class="ender"></div>
 
-
+	<!-- Custom cursor  -->
+	<div class="cursor"></div>
+	
+	<!-- for the cursor -->
+	<script src="./static/general/cursor.js"></script>
 	<!-- javascript libraries -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<!-- for the navbar animation  -->
-	<script>
-		/* Please ❤ this if you like it! */
-
-
-		(function($) {
-			"use strict";
-
-			$(function() {
-				var header = $(".start-style");
-				$(window).scroll(function() {
-					var scroll = $(window).scrollTop();
-
-					if (scroll >= 10) {
-						header.removeClass('start-style').addClass("scroll-on");
-					} else {
-						header.removeClass("scroll-on").addClass('start-style');
-					}
-				});
-			});
-
-			//Animation
-
-			$(document).ready(function() {
-				$('body.hero-anime').removeClass('hero-anime');
-			});
-
-			//Menu On Hover
-
-			$('body').on('mouseenter mouseleave', '.nav-item', function(e) {
-				if ($(window).width() > 750) {
-					var _d = $(e.target).closest('.nav-item');
-					_d.addClass('show');
-					setTimeout(function() {
-						_d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
-					}, 1);
-				}
-			});
-
-			//Switch light/dark
-
-			$("#switch").on('click', function() {
-				if ($("body").hasClass("dark")) {
-					$("body").removeClass("dark");
-					$("#switch").removeClass("switched");
-				} else {
-					$("body").addClass("dark");
-					$("#switch").addClass("switched");
-				}
-			});
-
-		})(jQuery);
-	</script>
+	<!-- for the navbar animation, scrolling bot and tilting logo  -->
+	<script src="./static/about-us/vanilla-tilt.min.js"></script>
+    <script src="./static/about-us/script.js"></script>
 	<!-- for the events section -->
 	<script src="./static/events-and-projects/js/main_events_mobile.js"></script>
 	<!-- for the projects section -->
