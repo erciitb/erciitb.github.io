@@ -35,6 +35,12 @@
     vertical-align: center;
 }
 
+body.dark .nav-item.active .nav-link {
+    color: aqua !important;
+}
+.navdark {
+    opacity: 1 !important;
+}
 
 /* 
 #scrollBtn i::before {
