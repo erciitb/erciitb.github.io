@@ -114,7 +114,7 @@ if ( navigator.userAgent.indexOf("Firefox") != -1 && windowWidth > 768) {
 	if ( 0.9 * fullBodyHeight <= enderPos <= 1.1 * fullBodyHeight ) {
 		// console.log('can do by enderPos');
 		usingEnder = true;
-		scrollEndPosition = enderPos - windowHeight;
+		scrollEndPosition = enderPos + windowHeight/4;  // this factor of 4 was selected based on trial and error
 	}
 	
 	let pxScrolled = 0;

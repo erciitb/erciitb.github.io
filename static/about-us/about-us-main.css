@@ -602,7 +602,7 @@ body {
 
 #scroll-bot {
 	position: fixed;
-	top: -25px;
+	top: 0px;
 	right: 0;
 	z-index: 100001;
 	height: 110%;
@@ -612,7 +612,7 @@ body {
 
 	background: #1a1b1d;
 	border-left: 3px #fff solid;
-	border-right: 2px #fff dashed;
+	border-right: 2.75px #fff dashed;
 }
 
 #scroll-bot img {
@@ -642,10 +642,9 @@ html {
 
 
 ::-webkit-scrollbar-track {
-	background: #1a1b1d;
-	border-left: 4px #fff solid;
-	border-right: 2px #fff dashed;
-	/* overflow: overlay; */
+	background: #1a1b1d; 
+	border-left: 4px solid #fff ;
+	border-right: 4px dashed #fff; /*nothing else works - outline, svg as background image*/
 }
 
 
