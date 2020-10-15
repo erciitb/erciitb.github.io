@@ -6,24 +6,54 @@ for animating the navbar
 (function($) {
 	"use strict";
 
-	$(function() {
-		var header = $(".start-style");
-		$(window).scroll(function() {
-			var scroll = $(window).scrollTop();
+    $(function() {
+        var header = $(".start-style");
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
 
-			if (scroll >= 10) {
-				header.removeClass('start-style').addClass("scroll-on");
-			} else {
-				header.removeClass("scroll-on").addClass('start-style');
-			}
-		});
-	});
+            if (scroll >= 10) {
+                header.removeClass('start-style').addClass("scroll-on");
+            } else {
+                header.removeClass("scroll-on").addClass('start-style');
+            }
+            if ($(window).scrollTop() > 100) {
+                document.getElementById("scrollBtn").style.display = "block";
+            } else {
+                $("#scrollBtn").fadeOut(200)
+            }
+        });
 
-	//Animation
+        $("#scrollBtn").click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+            $("#scrollBtn").fadeOut(1200)
+        });
+    });
+    //Animation
+    //Animation
 
-	$(document).ready(function() {
-		$('body.hero-anime').removeClass('hero-anime');
-	});
+    $(document).ready(function() {
+        $('body.hero-anime').removeClass('hero-anime');
+        $(document).scroll(function() {
+            if ($(window).scrollTop() > 20) {
+                $(".navdark").css({
+                    "background": "rgba(1,1,1,1)"
+                })
+            } else if ($(window).scrollTop() < 20) {
+                $(".navdark").css({
+                    "background": "rgba(0,0,0,0)"
+                })
+            }
+            // else {
+            //     $(".nav").css({
+            //         "background": "#20c9c3",
+            //         "position": "static"
+            //     })
+            // }
+
+        });
+    });
 
 	//Menu On Hover
 
