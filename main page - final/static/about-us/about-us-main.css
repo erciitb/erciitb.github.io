@@ -85,11 +85,12 @@ body.dark .nav-item.active .nav-link {
     font-size: 22px;
     line-height: 131.1%;
     /* or 47px */
-    text-align: left;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    width: 100% !important;
+    text-align: justify;
+    text-justify: inter-word;
 }
-
 * {
     box-sizing: border-box;
 }
@@ -443,6 +444,21 @@ p {
 ================================================== */
 
 @media (max-width: 767px) {
+      a .abouttext {
+        padding: 10%;
+        font-family: Montserrat;
+        font-style: normal;
+        background: #1F2833;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 131.1%;
+        /* or 47px */
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        width: 100% !important;
+        text-align: justify;
+        text-justify: inter-word;
+    }
     h1 {
         font-size: 38px;
     }
