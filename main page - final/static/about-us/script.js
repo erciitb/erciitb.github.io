@@ -38,7 +38,7 @@ for animating the navbar
         $(document).scroll(function() {
             if ($(window).scrollTop() > 20) {
                 $(".navdark").css({
-                    "background": "rgba(1,1,1,1)"
+                    "background": "rgba(28,29,33,1)"
                 })
             } else if ($(window).scrollTop() < 20) {
                 $(".navdark").css({
@@ -220,3 +220,13 @@ if ( navigator.userAgent.indexOf("Firefox") != -1 && windowWidth > 768) {
 }
 
 
+/*
+==========================================
+For the particles on the starting background
+==========================================
+*/
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles', './static/about-us/particles.json', function() {
+	// console.log('callback - particles.js config loaded');
+  });

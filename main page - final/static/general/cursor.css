@@ -16,8 +16,18 @@ for some reason this doesn't work
 	background-color: white;
 	border-radius: 50%;
 	/* transition: transform 0.3s ease-out; */
-	transition: all 0.1s ease-out;
+	scale: 1;
+	transition: transform 0.2s ease-out;
 	z-index: 100002;
+	mix-blend-mode: normal;
+}
+
+.enlarged-cursor {
+	transform: scale(4);
+}
+
+.cursor-difference-filter {
+	mix-blend-mode: difference;
 }
 
 /*

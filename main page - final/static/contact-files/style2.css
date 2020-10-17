@@ -148,7 +148,7 @@ button {
     height: 400px;
 
     /* for animation */
-    transform: translateY(-408px);
+    transform: translateY(-404px);
     clip-path: circle( 0% at 0% 0%);
     
     /* z-index: ; */
