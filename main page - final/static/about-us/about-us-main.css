@@ -558,6 +558,9 @@ p {
         width: 100%;
         height: 80vh;
     }
+	    .mobilenav {
+        background-color: black;
+    }
         #ercsvg {
         display: none;
         position: absolute;
