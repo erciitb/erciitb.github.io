@@ -6,13 +6,13 @@ document.addEventListener('mousemove', e => {
 })
 
 const enlargeCursor = function(e) {
-	cursor.style.scale = 4;
-	if (e.type == 'mouseleave') cursor.style.scale = 1;
+	cursor.classList.add("enlarged-cursor");
+	if (e.type == 'mouseleave') cursor.classList.remove("enlarged-cursor");
 }
 
 const applyDifferenceFilterCursor = function(e) {
-	cursor.style.mixBlendMode = "difference";
-	if (e.type == 'mouseleave') cursor.style.mixBlendMode = "normal";
+	cursor.classList.add("cursor-difference-filter");
+	if (e.type == 'mouseleave') cursor.classList.remove("cursor-difference-filter");
 }
 
 const enlargeHovers = document.querySelectorAll(".hover-enlarge");
