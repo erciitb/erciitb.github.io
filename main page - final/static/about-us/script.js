@@ -44,6 +44,9 @@ for animating the navbar
                 $(".navdark").css({
                     "background": "rgba(0,0,0,0)"
                 })
+	        $(".mobilenav").css({
+                    "background": "rgba(0,0,0,0)"
+                })
             }
             // else {
             //     $(".nav").css({
