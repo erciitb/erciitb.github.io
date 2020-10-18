@@ -17,6 +17,14 @@
 	overflow-y: hidden;
 }
 
+.ercsvgfull {
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    top: 50%;
+    left: 10%;
+}
+
 #scrollBtn {
     display: none;
     position: fixed;
