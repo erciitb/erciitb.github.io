@@ -1489,6 +1489,19 @@
 	<script src="./static/contact-files/form.js"></script>
 	<!-- for wiki -->
 	<script src="./static/wiki/wiki.js"></script>
+	    <script>
+<!--         // Add active class to the current button (highlight it) -->
+        var header = document.getElementById("navbarSupportedContent");
+        var btns = header.getElementsByClassName("nav-link");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active1");
+          current[0].className = current[0].className.replace(" active1", "");
+          this.className += " active1";
+          });
+        }
+        </script>
+																  
 
 </body>
 
