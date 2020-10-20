@@ -11,10 +11,9 @@
     background-size: 7%;
     background-color: #1F2833;
     overflow-x: hidden;
-	transition: all 200ms linear;
-
-	/* for the logo moving here and there */
-	overflow-y: hidden;
+    transition: all 200ms linear;
+    /* for the logo moving here and there */
+    overflow-y: hidden;
 }
 
 .ercsvgfull {
@@ -23,6 +22,10 @@
     height: 40%;
     top: 50%;
     left: 10%;
+}
+
+.notbig {
+    display: none;
 }
 
 #scrollBtn {
@@ -43,12 +46,14 @@
     vertical-align: center;
 }
 
-body.dark .nav-item.active .nav-link {
+body.dark .active1 .nav-link {
     color: aqua !important;
 }
+
 .navdark {
     opacity: 1 !important;
 }
+
 
 /* 
 #scrollBtn i::before {
@@ -66,6 +71,7 @@ body.dark .nav-item.active .nav-link {
     justify-content: center;
 }
 
+
 /* .home {
     width: 100%;
     height: 100vh;
@@ -75,6 +81,8 @@ body.dark .nav-item.active .nav-link {
     background-size: 100%;
     background-repeat: no-repeat;
 } */
+
+
 /* 
 .ercsvg {
     position: absolute;
@@ -111,6 +119,7 @@ body.dark .nav-item.active .nav-link {
     text-align: justify;
     text-justify: inter-word;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -147,13 +156,11 @@ body.dark .nav-item.active .nav-link {
     opacity: 1;
     transform: translateY(0);
     padding: 10px 0;
-    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 
 .start-header.scroll-on {
-    box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
     padding: 10px 0;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
@@ -195,7 +202,7 @@ body.dark .nav-item.active .nav-link {
     padding-right: 0;
 }
 
-.navbar-toggler:active,
+.navbar-toggler:active1,
 .navbar-toggler:focus {
     outline: none;
 }
@@ -239,17 +246,12 @@ body.dark .nav-item.active .nav-link {
 }
 
 .nav-link {
-    color: purple !important;
     font-weight: 500;
     transition: all 200ms linear;
 }
 
-.nav-item:hover .nav-link {
+.nav-item:hover .active1 .nav-link {
     color: aqua !important;
-}
-
-.nav-item.active .nav-link {
-    color: purple !important;
 }
 
 .nav-link {
@@ -257,10 +259,9 @@ body.dark .nav-item.active .nav-link {
     display: inline-block;
 }
 
-
 .nav-item:after {
     position: absolute;
-    bottom: -5px;
+    bottom: -6px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -275,11 +276,17 @@ body.dark .nav-item.active .nav-link {
     opacity: 1;
 }
 
-.nav-item.active:hover:after {
+.dark .nav-link .active1 {
+    bottom: 0;
+    opacity: 1;
+}
+
+
+/* .nav-item.active1:hover:after {
     opacity: 0;
 }
 
-.nav-item.active:before {
+.nav-item.active1:before {
     position: absolute;
     left: 0;
     bottom: 0px;
@@ -288,7 +295,7 @@ body.dark .nav-item.active .nav-link {
     content: '';
     background-color: aqua;
     opacity: 1;
-}
+} */
 
 .nav-item {
     position: relative;
@@ -420,20 +427,16 @@ p {
     background-color: #14151a !important;
 }
 
-.dark .start-header {
-    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
-}
+.dark .start-header {}
 
-.dark .start-header.scroll-on {
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-}
+.dark .start-header.scroll-on {}
 
 .dark .nav-link {
     color: #fff !important;
 }
 
-.dark .nav-item.active .nav-link {
-    color: #999 !important;
+.dark .active1 {
+    color: rgb(17, 230, 230) !important;
 }
 
 .dark .dropdown-menu {
@@ -464,7 +467,7 @@ p {
 ================================================== */
 
 @media (max-width: 767px) {
-      a .abouttext {
+    .abouttext {
         padding: 10%;
         font-family: Montserrat;
         font-style: normal;
@@ -562,19 +565,21 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-	    .home {
+    .home {
         width: 100%;
         height: 80vh;
     }
-	    .mobilenav {
-        background-color: black;
+    .mobilenav {
+        background-color: black !important;
     }
-        #ercsvg {
-        display: none;
+    #ercsvg {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, 50%);
+    }
+    .small {
+        display: none;
     }
     .column {
         width: 100%;
@@ -612,38 +617,31 @@ p {
 }
 
 
-
-
-
 /* 
 ===================================================
 adding code for animating logo  
 ===================================================
 */
+
 #erc-logo {
-	width: 100%;
+    width: 100%;
     position: relative;
-	
     display: flex;
     justify-content: center;
     transform-style: preserve-3d
 }
 
-
-#erc-logo img{
-	text-shadow: 10px 10px red; 
-	
+#erc-logo img {
+    text-shadow: 10px 10px red;
     width: 70%;
     border-radius: 50%;
-	
     margin: 20px 0;
 }
 
 #erc-logo img#letters {
-	position: absolute;
+    position: absolute;
     transform: translateZ(90px);
 }
-
 
 
 /* 
@@ -653,62 +651,62 @@ adding code for scroll bot
 */
 
 body {
-	overflow: overlay;
+    overflow: overlay;
 }
 
 #scroll-bot {
-	position: fixed;
-	top: 0px;
-	right: 0;
-	z-index: 100001;
-	height: 110%;
-	width: 25px;
-	
-	display: none;
-
-	background: #1a1b1d;
-	border-left: 3px #fff solid;
-	border-right: 2.75px #fff dashed;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    z-index: 100001;
+    height: 110%;
+    width: 25px;
+    display: none;
+    background: #1a1b1d;
+    border-left: 3px #fff solid;
+    border-right: 2.75px #fff dashed;
 }
 
 #scroll-bot img {
-	position: relative;
-	height: 50px;	
-	/* right: -20px; */
+    position: relative;
+    height: 50px;
+    /* right: -20px; */
 }
 
+
 /* hiding the scrollbar except for webkit */
+
 html {
-	scrollbar-width: none;
+    scrollbar-width: none;
 }
 
 ::-webkit-scrollbar {
-	width: 30px;	
-	background: transparent;
-	/* overflow: overlay; */
+    width: 30px;
+    background: transparent;
+    /* overflow: overlay; */
 }
 
 ::-webkit-scrollbar-thumb {
-	background-image: url("./scroll-bot.png");
-	background-position: center;
-	background-position-x: left;
-	background-size: 50px auto;
-	background-repeat: no-repeat;
+    background-image: url("./scroll-bot.png");
+    background-position: center;
+    background-position-x: left;
+    background-size: 50px auto;
+    background-repeat: no-repeat;
 }
-
 
 ::-webkit-scrollbar-track {
-	background: #1a1b1d; 
-	border-left: 4px solid #fff ;
-	border-right: 4px dashed #fff; /*nothing else works - outline, svg as background image*/
+    background: #1a1b1d;
+    border-left: 4px solid #fff;
+    border-right: 4px dashed #fff;
+    /*nothing else works - outline, svg as background image*/
 }
-
 
 @media screen and (max-width:768px) {
-	::-webkit-scrollbar{
-		display: none;
-	}
+     ::-webkit-scrollbar {
+        display: none;
+    }
 }
+
 
 /* 
 ===================================================
@@ -717,8 +715,8 @@ adding code for particles
 */
 
 #particles {
-	position: absolute;
-	z-index: 4;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
 }
