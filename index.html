@@ -57,22 +57,19 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 4%;">
                             <ul class="navbar-nav ml-auto py-4 py-md-0">
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link" href="#about us" style="font-size: large; ">Home</a>
+                                    <a class="nav-link active1" href="#about" style="font-size: large; ">Home</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link" href="#" style="font-size: large; ">Events</a>
+                                    <a class="nav-link" href="#events" style="font-size: large; ">Events</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link" href="#" style="font-size: large; ">Projects</a>
+                                    <a class="nav-link" href="#projects" style="font-size: large; ">Projects</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link" href="#" style="font-size: large; ">Team Details</a>
+                                    <a class="nav-link" href="#ercteam" style="font-size: large; ">Team Details</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link" href="#" style="font-size: large; ">Contact Us</a>
-                                </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link" href="#" style="font-size: large; " onclick=showsidebar()>Wiki</a>
+                                    <a class="nav-link" href="#contact" style="font-size: large; ">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -125,20 +122,17 @@
             </div>
         </div>
         <div id="particles"></div>
-        <div class="home">
+<div class="home notsmall" id="about">
 
-            <!-- .home {
-				width: 100%;
-				height: 100vh;
-				padding-top: 10%;
-				background-image: url("main-background.png");
-				background-position: center top;
-				background-size: 100%;
-				background-repeat: no-repeat;
-			} -->
             <img src="main-background.jpg " style=" width: 100%; height: 100%; opacity: 0.5;">
+
         </div>
-        <div class="ercsvgfull" style="z-index: 2000;">
+        <div class="home notbig" id="about">
+
+            <img src="main-background-mobile.jpg" style=" width: 100%; height: 100%; opacity: 0.5;">
+
+        </div>
+        <div class="ercsvgfull notsmall" style="z-index: 2000;">
             <svg width="1335" height="120" viewBox="0 0 1335 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
                 <path d="M703.045 69.7172H700.332V91.928H684.594V21.5939H709.286C722.039 21.5939 731.808 28.3805 732.35 44.7301C732.35 57.6864 727.738 65.09 720.14 67.8663L736.963 91.928H717.427L703.045 69.7172ZM709.558 54.2931C713.356 54.2931 716.613 50.5913 716.613 46.2725C716.613 41.9538 713.356 38.252 709.558 38.252H700.332V54.2931H709.558Z" fill="white"/>
@@ -186,12 +180,11 @@
                 </clipPath>
                 </defs>
                 </svg>
-
-
         </div>
+        <div class="ercsvg notbig"><img src="./static/about-us/ercwhite.svg"></div>
         <div class="row ">
             <div class="column">
-                <div id="erc-logo-container">
+                <div id="erc-logo-container logomain">
                     <div id="erc-logo">
                         <img src="./static/about-us/erc-logo-background.jpg" id="main-logo">
                         <img src="./static/about-us/erc-letters.png" id="letters">
@@ -212,6 +205,7 @@
 
         </div>
     </div>
+
 
 
     <!-- Events Section  -->
