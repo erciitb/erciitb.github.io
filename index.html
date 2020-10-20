@@ -12,7 +12,7 @@
 
     <!-- Introduction and About Us Section CSS -->
     <link rel="stylesheet" href="./static/about-us/about-us-main.css">
-
+    <link rel="stylesheet" href="./static/wiki/wiki.css">
     <!-- Bootstrap 4  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!--Google Fonts-->
@@ -32,57 +32,102 @@
     <link rel="stylesheet" href="./static/team-files/style.css">
 
     <!-- Contact Form section CSS -->
-	<link rel="stylesheet" href="./static/contact-files/style2.css">
-	
-	<!-- Cursor Animation CSS -->
-	<link rel="stylesheet" href="./static/general/cursor.css">	
+    <link rel="stylesheet" href="./static/contact-files/style2.css">
 
+    <!-- Cursor Animation CSS -->
+    <link rel="stylesheet" href="./static/general/cursor.css">
 </head>
 
 <body>
 
-	    <!-- back to top -->
-	<button id="scrollBtn" title="Go to top" style="z-index: 6000; padding-top:0px;">&#8963;</button>
+    <!-- back to top -->
+    <button id="scrollBtn" title="Go to top" style="z-index: 6000; padding-top:0px;">&#8963;</button>
 
     <!-- About Us Section -->
     <div class="dark about-us-container">
         <div class="navigation-wrap navdark start-header start-style">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-md mobilenav navbar-light">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-md mobilenav navbar-light">
 
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 							</button>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 4%;">
-                                <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                    <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                        <a class="nav-link" href="#about us" style="font-size: large; ">Home</a>
-                                    </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                        <a class="nav-link" href="#" style="font-size: large; ">Events</a>
-                                    </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                        <a class="nav-link" href="#" style="font-size: large; ">Projects</a>
-                                    </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                        <a class="nav-link" href="#" style="font-size: large; ">Team Details</a>
-                                    </li>
-                                    <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                        <a class="nav-link" href="#" style="font-size: large; ">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 4%;">
+                            <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link" href="#about us" style="font-size: large; ">Home</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link" href="#" style="font-size: large; ">Events</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link" href="#" style="font-size: large; ">Projects</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link" href="#" style="font-size: large; ">Team Details</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link" href="#" style="font-size: large; ">Contact Us</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link" href="#" style="font-size: large; " onclick=showsidebar()>Wiki</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                        </nav>
-                    </div>
-		</div>
+                    </nav>
+                </div>
+            </div>
         </div>
-		<div id="particles"></div>
-		<div class="home">
+        <div class="wiki">
+            <i class="fas fa-times" id="cancel" onclick=hidesidebar()></i>
+            <div id="wiki-overlay" onclick=hidesidebar()></div>
 
-			<!-- .home {
+            <div id="sidebar" class="sidebar">
+                <header>ERC Wiki</header>
+                <form id="wiki-form" class="search" method="get " action="default.html ">
+                    <input id="wiki-search" type="text" placeholder="Search.." name="search">
+                    <!-- <button type="submit" class="">
+                        <i class="fa fa-search"></i>
+                    </button> -->
+                    <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <a href="#">
+                    <i class="fas fa-qrcode"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-link"></i>
+                    <span>Shortcuts</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-stream"></i>
+                    <span>Overview</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-calendar"></i>
+                    <span>Events</span>
+                </a>
+                <a href="#">
+                    <i class="far fa-question-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-sliders-h"></i>
+                    <span>Services</span>
+                </a>
+                <a href="#">
+                    <i class="far fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+        <div id="particles"></div>
+        <div class="home">
+
+            <!-- .home {
 				width: 100%;
 				height: 100vh;
 				padding-top: 10%;
@@ -91,9 +136,9 @@
 				background-size: 100%;
 				background-repeat: no-repeat;
 			} -->
-			<img src="main-background.jpg " style=" width: 100%; height: 100%; opacity: 0.5;">
-		</div>
-<div class="ercsvgfull" style="z-index: 2000;">
+            <img src="main-background.jpg " style=" width: 100%; height: 100%; opacity: 0.5;">
+        </div>
+        <div class="ercsvgfull" style="z-index: 2000;">
             <svg width="1335" height="120" viewBox="0 0 1335 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
                 <path d="M703.045 69.7172H700.332V91.928H684.594V21.5939H709.286C722.039 21.5939 731.808 28.3805 732.35 44.7301C732.35 57.6864 727.738 65.09 720.14 67.8663L736.963 91.928H717.427L703.045 69.7172ZM709.558 54.2931C713.356 54.2931 716.613 50.5913 716.613 46.2725C716.613 41.9538 713.356 38.252 709.558 38.252H700.332V54.2931H709.558Z" fill="white"/>
@@ -143,7 +188,7 @@
                 </svg>
 
 
-        </div>		
+        </div>
         <div class="row ">
             <div class="column">
                 <div id="erc-logo-container">
@@ -155,13 +200,13 @@
             </div>
             <div class="column1 ">
                 <div class="abouttext col-md-11 col-12">
-					<div class="hover-enlarge hover-difference">
-					Have you ever wanted to design a circuit by yourself or control your own bot? Well, you’ve come to the right place! Electronics and Robotics Club, an integral part of the Institute Technical Council, IIT Bombay, is the club that satiates the techie that
-                    you all possess. Our vision is to develop a powerful and remarkable technical community of students across all years and departments. We encourage every student to delve into tech and also provide you with a plethora of opportunities-
-                    be it, group discussions, hackathons, boot camps, GCs, expert-talks, or even various competitions. The Electronics and Robotics Club was born from the two of its parent clubs(guess which? :P), 2017 being the year of christening. We
-                    encourage every one of you to tinker around and excel in your technical skills by performing hands-on experiments with the innumerable resources at your disposal. ERC is ever-ready to welcome new innovative ideas, contributions as
-					well as suggestions for its excellence. A perfect place for you to explore tech and tinker around!
-					</div>
+                    <div class="hover-enlarge hover-difference">
+                        Have you ever wanted to design a circuit by yourself or control your own bot? Well, you’ve come to the right place! Electronics and Robotics Club, an integral part of the Institute Technical Council, IIT Bombay, is the club that satiates the techie that
+                        you all possess. Our vision is to develop a powerful and remarkable technical community of students across all years and departments. We encourage every student to delve into tech and also provide you with a plethora of opportunities-
+                        be it, group discussions, hackathons, boot camps, GCs, expert-talks, or even various competitions. The Electronics and Robotics Club was born from the two of its parent clubs(guess which? :P), 2017 being the year of christening.
+                        We encourage every one of you to tinker around and excel in your technical skills by performing hands-on experiments with the innumerable resources at your disposal. ERC is ever-ready to welcome new innovative ideas, contributions
+                        as well as suggestions for its excellence. A perfect place for you to explore tech and tinker around!
+                    </div>
                 </div>
             </div>
 
@@ -179,9 +224,10 @@
             <div class="desktop-card desktop-card2">
                 <h2>XLR8 <i class="fas fa-arrow-right"></i>
                 </h2>
-                <p class='vertical'>Race to finish line!</p>
-                <p class='detail'>Your mission, should you choose to accept it, is to design a remote-controlled bot from scratch. Using your phone, you should be able to manoeuvre the bot safely through a track filled with a diverse set of obstacles. Be warned; The clock
-                    is ticking!
+                <p class='vertical'>A race against time
+                </p>
+                <p class='detail'>You are now a member of a team of four. Your mission, should you choose to accept it, is to design a remote-controlled bot from scratch. Using your phone, you should be able to manoeuvre the bot safely through a track filled with a diverse
+                    set of obstacles. Be warned; The clock is ticking!
                 </p>
                 <div class="pic" style="background-image: url('./static/events-and-projects/media/events/xlr8.gif');"></div>
                 <ul class='card-dots'>
@@ -286,7 +332,8 @@
                 <h2 class="large-head">Intro to Arduino <i class="fas fa-arrow-right"></i>
                 </h2>
                 <p class='vertical'>Ar-do-we-know? </p>
-                <p class='detail'>We organise the Arduino Bootcamp to get you started with programming in Arduino. Have no prior programming experience? No worries again, we’ll start from scratch and show you the power of Arduino with hands-on experience in the session.
+                <p class='detail'> We organise the Arduino Bootcamp to get you started with Arduino programming. Have no prior programming experience? No worries, we’ll start from scratch and show you the power of Arduino with hands-on experience in the session.With this
+                    kickstart, and some practise of your own, you’ll be creating your own Arduino projects in no time!
 
                 </p>
                 <div class="pic" style="background-image: url('./static/events-and-projects/media/events/arduino.png');"></div>
@@ -391,9 +438,10 @@
             <div class="desktop-card desktop-card2">
                 <h2 class="large-head">Line Follower <i class="fas fa-arrow-right"></i>
                 </h2>
-                <p class='vertical'>Be on the line!</p>
-                <p class='detail'> Remember that awesome bot you made during XLR8? Now it's time to teach your bot to think and make its own decisions!
-                    <br> Now you have a modified mission- build an autonomous robot that can detect and follow a white path on a black backdrop-using the Arduino microcontroller!
+                <p class='vertical'>Dare to Deviate
+                </p>
+                <p class='detail'> Remember that awesome bot you made during XLR8? Now it's time to teach your bot to think! Modified mission- build a bot that can detect and follow a white path on a black backdrop-using the Arduino microcontroller. This will introduce
+                    you to microcontrollers along with a flavour of control systems.
                 </p>
                 <div class="pic" style="background-image: url('./static/events-and-projects/media/events/line.gif');"></div>
                 <ul class='card-dots'>
@@ -497,8 +545,12 @@
             <div class="desktop-card">
                 <h2 class="large-head">Get Electrified!! <i class="fas fa-arrow-right"></i>
                 </h2>
-                <p class='vertical'>A trip to electronics.</p>
-                <p class='detail'>Really informative & fun hands-on sessions where we will give you an introduction to analog and digital electronics. In the analog session, we will implement circuits and see actual waveforms.</p>
+                <p class='vertical'>as simple as 01,10,11
+                </p>
+                <p class='detail'>Throughout the year, we conduct several Get Electrified sessions where we will give you an introduction to analog and digital electronics. We will implement circuits and see actual waveforms and learn their amazing applications. Finally,
+                    using all the things discussed, you shall be building a cool project!
+
+                </p>
                 <div class="pic" style="background-image: url('./static/events-and-projects/media/events/electrified.jpg');"></div>
                 <ul class='card-dots'>
                     <li></li>
@@ -606,9 +658,11 @@
                             <div class="card-img-top" style="background-image: url('./static/events-and-projects/media/events/xlr8.gif');"> </div>
                             <div class="card-body">
                                 <h5>XLR8</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Race to finish line!</h6>
-                                <p class="card-text hide">Your mission, should you choose to accept it, is to design a remote-controlled bot from scratch. Using your phone, you should be able to manoeuvre the bot safely through a track filled with a diverse set of obstacles.
-                                    <br>Be warned; The clock is ticking!</p>
+                                <h6 class="card-subtitle mb-2 text-muted">A race against time
+                                </h6>
+                                <p class="card-text hide">You are now a member of a team of four. Your mission, should you choose to accept it, is to design a remote-controlled bot from scratch. Using your phone, you should be able to manoeuvre the bot safely through a track filled
+                                    with a diverse set of obstacles. Be warned; The clock is ticking!
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -618,8 +672,9 @@
                             <div class="card-body">
                                 <h5>Intro to Arduino </h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Ar-do-we-know?</h6>
-                                <p class="card-text hide">We organise the Arduino Bootcamp to get you started with programming in Arduino. Have no prior programming experience? No worries again, we’ll start from scratch and show you the power of Arduino with hands-on experience
-                                    in the session.
+                                <p class="card-text hide">We organise the Arduino Bootcamp to get you started with programming in Arduino. Have no prior programming experience? No worries, we’ll start from scratch and show you the power of Arduino with hands-on experience in the
+                                    session. Believe us, with this kickstart, and some practise of your own, you’ll be creating your own Arduino projects in no time!
+
                                 </p>
                             </div>
                         </div>
@@ -629,9 +684,11 @@
                             <div class="card-img-top" style="background-image: url('./static/events-and-projects/media/events/line.gif');"> </div>
                             <div class="card-body">
                                 <h5>Line Follower</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Be on the line!</h6>
-                                <p class="card-text hide">Remember that awesome bot you made during XLR8? Now it's time to teach your bot to think and make its own decisions!
-                                    <br> Now you have a modified mission- build an autonomous robot that can detect and follow a white path on a black backdrop-using the Arduino microcontroller!</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Dare to Deviate
+                                </h6>
+                                <p class="card-text hide">Remember that awesome bot you made during XLR8? Now it's time to teach your bot to think! Modified mission- build a bot that can detect and follow a white path on a black backdrop-using the Arduino microcontroller. This
+                                    will introduce you to microcontrollers along with a flavour of control systems.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -640,8 +697,11 @@
                             <div class="card-img-top" style="background-image: url('./static/events-and-projects/media/events/electrified.jpg');"> </div>
                             <div class="card-body">
                                 <h5>Get Electrified!!</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">A trip to electronics.</h6>
-                                <p class="card-text hide">Really informative & fun hands-on sessions where we will give you an introduction to analog and digital electronics. In the analog session, we will implement circuits and see actual waveforms.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">as simple as 01,10,11
+                                </h6>
+                                <p class="card-text hide">Throughout the year, we conduct several Get Electrified sessions where we will give you an introduction to analog and digital electronics. We will implement circuits and see actual waveforms and learn their amazing applications.
+                                    Finally, using all the things discussed, you shall be building a cool project!
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1098,7 +1158,7 @@
 
 	<!-- Teams Section  -->
 	<div class="team-section " id="3 ">
-		<div class="team-head background-parallax hover-enlarge hover-difference">
+		<div class="team-head background-parallax hover-enlarge hover-difference ">
 			<h2>Meet the Team</h2>
 		</div>
 		<div class="team-content ">
@@ -1427,6 +1487,9 @@
 	<script src="./static/events-and-projects/js/main_projects_mobile.js "></script>
 	<!-- for the contact form -->
 	<script src="./static/contact-files/form.js"></script>
+	<!-- for wiki -->
+	<script src="./static/wiki/wiki.js"></script>
+
 </body>
 
 </html>

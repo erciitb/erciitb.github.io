@@ -257,7 +257,7 @@ body {
     /* height: 70%; */
     color: #FFF;
     opacity: 0;
-    font-size: 80%;
+    font-size: 85%;
     letter-spacing: 1px;
     text-align: justify;
     -webkit-transition: all 0.2s ease;
@@ -374,8 +374,8 @@ body {
         font-size: 450%;
     }
     .project-container .detail {
-        top: 15%;
-        font-size: 100%;
+        top: 10%;
+        font-size: 105%;
     }
 }
 
@@ -383,7 +383,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .mobile-projects-container {
         display: flex;
     }
