@@ -25,7 +25,7 @@ for some reason this doesn't work
 }
 
 .enlarged-cursor {
-    transform: scale(4);
+    transform: scale(2.5);
 }
 
 .cursor-difference-filter {
