@@ -82,6 +82,7 @@ button {
     /* this is the manager row  */
     display: grid;
     grid-template-columns: 20% 20%;
+    column-gap: 20px;
     justify-content: center;
     margin: 0 auto;
     width: 90%;
@@ -202,7 +203,7 @@ button {
         grid-template-columns: 33.3% 33.3%;
     }
     .team-section .team-content .team-content-cons-enthus {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 33% 33% 33%;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         width: 100%;
     }

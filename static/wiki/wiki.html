@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Responsive Sidebar Menu</title> -->
+    <link rel="stylesheet" href="wiki.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        function checkmedia() {
+            if (window.innerWidth < 600) {
+                window.location.href = 'https://www.tech-iitb.org/erc-wiki/index.php/Main_Page'
+            }
+        }
+        document.getElementById('wiki-form').onsubmit = function() {
+            window.location = 'https://www.tech-iitb.org/erc-wiki/index.php?search=' + document.getElementById('wiki-search').value + '&title=Special%3ASearch&go=Go';
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wiki">
+        <input type="checkbox" id="check" onchange=checkmedia()>
+        <label for="check">
+        <div id="btn">Wiki</div>
+         <i class="fas fa-times" id="cancel"></i>
+        </label>
+
+        <div class="sidebar">
+            <header>ERC Wiki</header>
+            <form id="wiki-form" class="search" method="get " action="default.html ">
+                <input id="wiki-search" type="text" placeholder="Search.." name="search">
+                <!-- <button type="submit" class="">
+                    <i class="fa fa-search"></i>
+                </button> -->
+                <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a href="#">
+                <i class="fas fa-qrcode"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#">
+                <i class="fas fa-link"></i>
+                <span>Shortcuts</span>
+            </a>
+            <a href="#">
+                <i class="fas fa-stream"></i>
+                <span>Overview</span>
+            </a>
+            <a href="#">
+                <i class="fas fa-calendar"></i>
+                <span>Events</span>
+            </a>
+            <a href="#">
+                <i class="far fa-question-circle"></i>
+                <span>About</span>
+            </a>
+            <a href="#">
+                <i class="fas fa-sliders-h"></i>
+                <span>Services</span>
+            </a>
+            <a href="#">
+                <i class="far fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

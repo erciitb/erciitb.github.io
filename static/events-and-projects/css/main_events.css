@@ -381,7 +381,7 @@ body {
     }
     .event-container .detail {
         font-size: 105%;
-        top: 20%;
+        top: 10%;
     }
 }
 
@@ -389,7 +389,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .mobile-events-container {
         display: flex;
     }
