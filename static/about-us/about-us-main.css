@@ -102,6 +102,7 @@ body.dark .active1 .nav-link {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
+    opacity: 0.1;
 }
 
 .abouttext {
@@ -715,8 +716,20 @@ adding code for particles
 */
 
 #particles {
-    position: absolute;
     z-index: 4;
     width: 100%;
     height: 100%;
+    position: relative;
+}
+
+#particles img {
+    width: 100%;
+    height: 100%;
+}
+
+#particles canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
 }

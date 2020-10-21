@@ -201,23 +201,19 @@ button {
 @media screen and (max-width:768px) {
     .team-section .team-content .team-content-mangrs {
         grid-template-columns: 33.3% 33.3%;
-	}
-	
+    }
     .team-section .team-content .team-content-cons-enthus {
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         width: 100%;
     }
-
     .team-content .team-contact-card .team-member-name#long-name {
         font-size: 0.75em;
-	} 
-	
+    }
     .team-section .team-head.background-parallax h2 {
         /* font-size: 60px; */
         background-position-x: 1000px;
     }
-
     .team-section {
         font-size: 14px;
     }

@@ -1,6 +1,8 @@
 /* 
 for some reason this doesn't work 
 */
+
+
 /*
 .hover-this:hover ~ .cursor{
 	background-color: blue;
@@ -9,26 +11,27 @@ for some reason this doesn't work
 } */
 
 .cursor {
-	display: none;
-	pointer-events: none;
-	position: fixed;
-	padding: 0.8rem;
-	background-color: white;
-	border-radius: 50%;
-	/* transition: transform 0.3s ease-out; */
-	scale: 1;
-	transition: transform 0.2s ease-out;
-	z-index: 100002;
-	mix-blend-mode: normal;
+    display: none;
+    pointer-events: none;
+    position: fixed;
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 50%;
+    /* transition: transform 0.3s ease-out; */
+    scale: 1;
+    transition: transform 0.2s ease-out;
+    z-index: 100002;
+    mix-blend-mode: normal;
 }
 
 .enlarged-cursor {
-	transform: scale(4);
+    transform: scale(4);
 }
 
 .cursor-difference-filter {
-	mix-blend-mode: difference;
+    mix-blend-mode: difference;
 }
+
 
 /*
 =================================================
@@ -37,15 +40,18 @@ for removing pointers all over the place
 */
 
 * {
-	cursor: none;
+    cursor: none;
 }
 
-[type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled), button:not(:disabled) {
-	cursor: none;
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+    cursor: none;
 }
 
 @media screen and (min-width:768px) {
-	.cursor {
-		display: block;
-	}
+    .cursor {
+        display: block;
+    }
 }
