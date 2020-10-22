@@ -1,6 +1,10 @@
 /* #Primary
 ================================================== */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .dark {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -18,21 +22,26 @@
 
 .ercsvgfull {
     position: absolute;
-    width: 70%;
-    height: 40%;
-    top: 50%;
-    left: 10%;
+    vertical-align: auto;
+    left: 20vh;
+    width: 80%;
+    top: 50vh;
+    filter: invert(1);
 }
 
 .notbig {
     display: none;
 }
 
+.notsmall {
+    display: block;
+}
+
 #scrollBtn {
     display: none;
     position: fixed;
     bottom: 5%;
-    right: 2%;
+    right: 5%;
     z-index: 00;
     width: 50px;
     height: 50px;
@@ -71,38 +80,9 @@ body.dark .active1 .nav-link {
     justify-content: center;
 }
 
-
-/* .home {
-    width: 100%;
-    height: 100vh;
-    padding-top: 10%;
-    background-image: url("main-background.png");
-    background-position: center top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-} */
-
-
-/* 
-.ercsvg {
-    position: absolute;
-    width: 40%;
-    height: 30%;
-    left: 55%;
-    top: 70%;
-} */
-
 .home {
     width: 100%;
     height: 100%;
-}
-
-#ercsvg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    opacity: 0.1;
 }
 
 .abouttext {
@@ -566,6 +546,10 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+    .navdark {
+        opacity: 1 !important;
+        background-color: black !important;
+    }
     .home {
         width: 100%;
         height: 80vh;
@@ -573,13 +557,10 @@ p {
     .mobilenav {
         background-color: black !important;
     }
-    #ercsvg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 50%);
+    .notbig {
+        display: block;
     }
-    .small {
+    .notsmall {
         display: none;
     }
     .column {
@@ -592,10 +573,10 @@ p {
     }
     .ercsvg {
         position: absolute;
-        width: 92%;
-        align-self: left;
-        top: 60%;
-        left: 3%;
+        width: 90%;
+        align-self: center;
+        top: 50%;
+        left: 5%;
     }
     .home {
         width: 100%;
