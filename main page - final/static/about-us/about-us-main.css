@@ -651,7 +651,7 @@ body {
 
 #scroll-bot img {
     position: relative;
-    height: 50px;
+    width: 40px;
     /* right: -20px; */
 }
 
@@ -671,7 +671,8 @@ html {
 ::-webkit-scrollbar-thumb {
     background-image: url("./scroll-bot.png");
     background-position: center;
-    background-position-x: left;
+	background-position-x: left;
+	min-height: 100px;
     background-size: 50px auto;
     background-repeat: no-repeat;
 }
@@ -688,6 +689,34 @@ html {
         display: none;
     }
 }
+
+/* 
+===================================================
+for adding scroll in wiki
+===================================================
+*/
+
+
+.wiki .sidebar {
+	overflow-y: auto;
+}
+
+.wiki .sidebar::-webkit-scrollbar {
+	width: 10px;
+}
+
+.wiki .sidebar::-webkit-scrollbar-thumb {
+    background: transparent;
+	background-color: rgb(87, 87, 87);
+	border-radius: 3px;
+}
+
+.wiki .sidebar::-webkit-scrollbar-track {
+	background: #1a1b1d;
+	border: none;
+    border-right: none;
+}
+
 
 
 /* 

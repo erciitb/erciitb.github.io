@@ -190,7 +190,9 @@ if (navigator.userAgent.indexOf("Firefox") != -1 && windowWidth > 768) {
         e.preventDefault();
     }
 
+	// this function is not working properly - canceling out for now - remove the return statement to see the problem fully
     function handleScrollBot(e) {
+		return
         if (scrollActivated) {
             // getting y position of mouse
             let mouseY = e.clientY;
@@ -201,7 +203,7 @@ if (navigator.userAgent.indexOf("Firefox") != -1 && windowWidth > 768) {
             // scrollBot.style.top = percentScrolled + "%";
             scrollBot.style.top = mouseY + "px";
 
-            // console.log("Scrolling to: ", percentScrolled * scrollEndPosition / 100, " scroll bot at: ", mouseY, "scroll width is: ", scrollEndPosition);
+            console.log("Scrolling to: ", percentScrolled * scrollEndPosition / 100, " scroll bot at: ", mouseY, "scroll width is: ", scrollEndPosition);
         } else {
             // console.log("scroll not activated!");
         }
@@ -211,7 +213,6 @@ if (navigator.userAgent.indexOf("Firefox") != -1 && windowWidth > 768) {
     // vanishing and reappearing on window resize
     window.addEventListener("resize", function() {
         if (windowWidth < 768) {
-            // console.log("run");
             scrollBotContainer.style.display = "none";
         } else {
             scrollBotContainer.style.display = "block";
