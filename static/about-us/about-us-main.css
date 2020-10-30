@@ -690,12 +690,12 @@ body {
     display: none;
     background: #1a1b1d;
     border-left: 3px #fff solid;
-    border-right: 2.75px #fff dashed;
+    border-right: 4px #fff dashed;
 }
 
 #scroll-bot img {
     position: relative;
-    width: 40px;
+	width: 40px;  
     /* right: -20px; */
 }
 
@@ -715,21 +715,16 @@ html {
 ::-webkit-scrollbar-thumb {
     background-image: url("./scroll-bot.png");
     background-position: center;
-<<<<<<< HEAD
-    background-position-x: left;
-    min-height: 100px;
-=======
-	background-position-x: left;
-	min-height: 100px;
->>>>>>> b1e5871262e74d6e5e2bee17d2a7e812ee6b9efb
-    background-size: 50px auto;
+	background-position-x: 5px;
+	min-height: 40px;
+    background-size: 40px auto;
     background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar-track {
-    background: #1a1b1d;
+	background: #1a1b1d;
     border-left: 4px solid #fff;
-    border-right: 4px dashed #fff;
+    border-right: 6px dashed #fff;
     /*nothing else works - outline, svg as background image*/
 }
 
@@ -738,34 +733,6 @@ html {
         display: none;
     }
 }
-
-/* 
-===================================================
-for adding scroll in wiki
-===================================================
-*/
-
-
-.wiki .sidebar {
-	overflow-y: auto;
-}
-
-.wiki .sidebar::-webkit-scrollbar {
-	width: 10px;
-}
-
-.wiki .sidebar::-webkit-scrollbar-thumb {
-    background: transparent;
-	background-color: rgb(87, 87, 87);
-	border-radius: 3px;
-}
-
-.wiki .sidebar::-webkit-scrollbar-track {
-	background: #1a1b1d;
-	border: none;
-    border-right: none;
-}
-
 
 
 /* 
