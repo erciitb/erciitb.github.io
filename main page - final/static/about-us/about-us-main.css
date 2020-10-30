@@ -55,12 +55,18 @@ html {
     vertical-align: center;
 }
 
-body.dark .active1 .nav-link {
+body {
+    position: relative;
+}
+
+body.dark .active .nav-link {
     color: aqua !important;
 }
 
-.navdark {
+.active {
+    color: aqua !important;
     opacity: 1 !important;
+    background: none !important;
 }
 
 
@@ -72,6 +78,10 @@ body.dark .active1 .nav-link {
 #scrollBtn:hover {
     transition: all 0.2s;
     bottom: 4.5%;
+}
+
+.mobilespace {
+    display: none;
 }
 
 .row {
@@ -142,7 +152,7 @@ body.dark .active1 .nav-link {
 }
 
 .start-header.scroll-on {
-    padding: 10px 0;
+    /* padding: 10px 0; */
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
@@ -178,6 +188,7 @@ body.dark .active1 .nav-link {
 }
 
 .navbar-toggler {
+    color: white !important;
     float: right;
     border: none;
     padding-right: 0;
@@ -195,6 +206,7 @@ body.dark .active1 .nav-link {
     position: relative;
     border-bottom: 1px solid #000;
     transition: all 300ms linear;
+    color: white !important;
 }
 
 .navbar-light .navbar-toggler-icon:after,
@@ -227,6 +239,7 @@ body.dark .active1 .nav-link {
 }
 
 .nav-link {
+    color: white;
     font-weight: 500;
     transition: all 200ms linear;
 }
@@ -236,8 +249,10 @@ body.dark .active1 .nav-link {
 }
 
 .nav-link {
+    color: white;
     position: relative;
     display: inline-block;
+    padding: 4px !important;
 }
 
 .nav-item:after {
@@ -257,9 +272,18 @@ body.dark .active1 .nav-link {
     opacity: 1;
 }
 
-.dark .nav-link .active1 {
+.navbar-light .navbar-nav .dark .nav-link .active {
+    color: aqua;
     bottom: 0;
     opacity: 1;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.dark .nav-link {
+    color: white;
 }
 
 
@@ -412,10 +436,6 @@ p {
 
 .dark .start-header.scroll-on {}
 
-.dark .nav-link {
-    color: #fff !important;
-}
-
 .dark .active1 {
     color: rgb(17, 230, 230) !important;
 }
@@ -430,6 +450,10 @@ p {
     color: #fff;
 }
 
+.navbar-toggler-icon {
+    color: white !important;
+}
+
 .dark .navbar-light .navbar-toggler-icon {
     border-bottom: 1px solid #fff;
 }
@@ -437,6 +461,7 @@ p {
 .dark .navbar-light .navbar-toggler-icon:after,
 .dark .navbar-light .navbar-toggler-icon:before {
     background-color: #fff;
+    color: white;
 }
 
 .dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -550,9 +575,28 @@ p {
         opacity: 1 !important;
         background-color: black !important;
     }
+    .start-header {
+        opacity: 1;
+        transform: translateY(0);
+        padding: 0%;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+    .start-header.scroll-on {
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+    .start-header.scroll-on .navbar-brand img {
+        height: 24px;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+    .mobilespace {
+        display: inline;
+    }
     .home {
         width: 100%;
-        height: 80vh;
+        height: 100vh;
     }
     .mobilenav {
         background-color: black !important;
@@ -564,7 +608,7 @@ p {
         display: none;
     }
     .column {
-        width: 100%;
+        width: 75%;
         font-size: 12px !important;
     }
     .column1 {
@@ -589,7 +633,7 @@ p {
     .navigation-wrap {
         position: fixed;
         width: 100%;
-        height: 10%;
+        height: 8%;
         top: 0;
         left: 0;
         z-index: 1000;
@@ -651,7 +695,7 @@ body {
 
 #scroll-bot img {
     position: relative;
-    height: 50px;
+    width: 40px;
     /* right: -20px; */
 }
 
@@ -672,6 +716,7 @@ html {
     background-image: url("./scroll-bot.png");
     background-position: center;
     background-position-x: left;
+    min-height: 100px;
     background-size: 50px auto;
     background-repeat: no-repeat;
 }
@@ -687,6 +732,33 @@ html {
      ::-webkit-scrollbar {
         display: none;
     }
+}
+
+
+/* 
+===================================================
+for adding scroll in wiki
+===================================================
+*/
+
+.wiki .sidebar {
+    overflow-y: auto;
+}
+
+.wiki .sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.wiki .sidebar::-webkit-scrollbar-thumb {
+    background: transparent;
+    background-color: rgb(87, 87, 87);
+    border-radius: 3px;
+}
+
+.wiki .sidebar::-webkit-scrollbar-track {
+    background: #1a1b1d;
+    border: none;
+    border-right: none;
 }
 
 
