@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <title>Electronics and Robotics Club!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="We are a club that satiates the techie you all possess! A place for tinkerers and the sort.">
-	<meta name="keywords" content="Electronics and Robotics Club, IIT Bombay">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="We are a club that satiates the techie you all possess! A place for tinkerers and the sort.">
+    <meta name="keywords" content="Electronics and Robotics Club, IIT Bombay">
     <!-- Favicon -->
     <link rel="icon" href="./favicon.svg" sizes="any" type="image/svg+xml">
 
@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="./static/general/cursor.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarSupportedContent">
 
     <!-- back to top -->
     <button id="scrollBtn" title="Go to top" style="z-index: 6000; padding-top:0px;">&#8963;</button>
@@ -49,31 +49,31 @@
         <div class="navigation-wrap navdark start-header start-style">
             <div class="row">
                 <div class="col-12">
-                    <nav class="navbar navbar-expand-md mobilenav navbar-light">
+                    <nav class="navbar navbar-expand-md mobilenav ">
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
+							<span class="fas fa-bars"></span>
 						</button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 4%;">
                             <ul class="navbar-nav ml-auto py-4 py-md-0">
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link active1" href="#about" style="font-size: large; ">Home</a>
+                                    <a class="nav-link " href="#about" style="font-size: medium; ">Home</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link" href="#events" style="font-size: large; ">Events</a>
+                                    <a class="nav-link" href="#events" style="font-size: medium; ">Events</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link" href="#projects" style="font-size: large; ">Projects</a>
+                                    <a class="nav-link" href="#projects" style="font-size: medium; ">Projects</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link" href="#ercteamdet" style="font-size: large; ">Team Details</a>
+                                    <a class="nav-link" href="#ercteamdet" style="font-size: medium; ">Team Details</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link" href="#contact" style="font-size: large; ">Contact Us</a>
+                                    <a class="nav-link" href="#contact" style="font-size: medium; ">Contact Us</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
-                                    <a class="nav-link" style="font-size: large; " onclick=showsidebar()>Wiki</a>
+                                    <a class="nav-link" style="font-size: medium; " onclick=showsidebar()>Wiki</a>
                                 </li>
 
                             </ul>
@@ -83,6 +83,7 @@
                 </div>
             </div>
         </div>
+
         <div class="wiki">
             <i class="fas fa-times" id="cancel" onclick=hidesidebar()></i>
             <div id="wiki-overlay" onclick=hidesidebar()></div>
@@ -132,12 +133,21 @@
 
             </div>
             <div class="home notbig" id="about">
-                <img src="static/about-us/main-background-mobile.jpg" style=" width: 100%; height: 100%; opacity: 0.3;">
+                <img src="static/about-us/main-background-mobile.jpg" style=" width: 100%; height: 100vh; opacity: 0.3;">
             </div>
             <div class="ercsvgfull notsmall">
                 <img src="./static/about-us/ERC1line.svg">
             </div>
             <div class="ercsvg notbig"><img src="./static/about-us/ercwhite.svg"></div>
+        </div>
+        <div class="mobilespace">
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
         </div>
         <div class="row ">
             <div class="column">
