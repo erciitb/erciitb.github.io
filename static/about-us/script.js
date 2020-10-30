@@ -112,7 +112,9 @@ VanillaTilt.init(ercLogo, {
     speed: 300,
     scale: 1.1,
     reverse: true,
-    easing: "cubic-bezier(.13,.59,.85,.36)",
+	easing: "cubic-bezier(.13,.59,.85,.36)",
+	reset: true,
+	// "glare-prerender": true,
     // glare: true,
     // maxGlare: 0.8,
 });
