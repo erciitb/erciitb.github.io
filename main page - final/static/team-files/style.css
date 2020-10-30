@@ -174,7 +174,7 @@ button {
 .team-content .team-contact-card .team-member-name {
     padding: 5px 0px;
     padding-bottom: 0px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .team-content .team-contact-card .team-member-name#long-name {
