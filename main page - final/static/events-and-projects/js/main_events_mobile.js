@@ -87,11 +87,11 @@ function swipedetect(el, callback) {
         startX = touchobj.clientX
         startY = touchobj.clientY
         startTime = new Date().getTime() // record time when finger first makes contact with surface
-        e.preventDefault()
+            // e.preventDefault()
     }, false)
 
     touchsurface.addEventListener('touchmove', function(e) {
-        e.preventDefault() // prevent scrolling when inside DIV
+        // e.preventDefault() // prevent scrolling when inside DIV
     }, false)
 
     touchsurface.addEventListener('touchend', function(e) {
@@ -107,7 +107,7 @@ function swipedetect(el, callback) {
             }
         }
         handleswipe(swipedir)
-        e.preventDefault()
+            // e.preventDefault()
     }, false)
     touchsurface.addEventListener('mousedown', function(e) {
         var touchobj = unify(e)
@@ -146,19 +146,27 @@ function handleswipe(isSwipe) {
 
 swipedetect(document.getElementById("event-slideshow-container"), function(swipedir) {
     console.log(swipedir)
-    if (swipedir == "up") {
-        e = document.getElementsByClassName("eventSelected")[0].children[0].children[1];
-        if (e.className.indexOf(" show-content") == -1)
-            e.className += " show-content";
-        e.children[2].className = e.children[2].className.replace(" hide", "");
-    } else if (swipedir == "down") {
-        e = document.getElementsByClassName("eventSelected")[0].children[0].children[1];
-        if (e.children[2].className.indexOf("hide") == -1)
-            e.children[2].className += " hide";
-        e.className = e.className.replace(" show-content", "");
-    } else if (swipedir == "eventLeft") {
+    if (swipedir == "eventLeft") {
         pluseventSlides(1);
     } else if (swipedir == "eventRight") {
         pluseventSlides(-1);
     }
 });
+
+document.getElementById("event-slideshow-container").addEventListener('click', () => {
+    console.log("click")
+    e = document.getElementsByClassName("eventSelected")[0].children[0].children[1];
+    if (e.className.indexOf(" show-content") == -1)
+        swipedir = "up"
+    else
+        swipedir = "down"
+    if (swipedir == "up") {
+        if (e.className.indexOf(" show-content") == -1)
+            e.className += " show-content";
+        e.children[2].className = e.children[2].className.replace(" hide", "");
+    } else {
+        if (e.children[2].className.indexOf("hide") == -1)
+            e.children[2].className += " hide";
+        e.className = e.className.replace(" show-content", "");
+    }
+})
