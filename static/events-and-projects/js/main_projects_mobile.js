@@ -19,14 +19,14 @@ function showSlides(newSlideIndex) {
     slides[slideIndex].className = slides[slideIndex].className.replace(" projectSelected", "");
     slides[(slideIndex - 1 + n) % n].className = slides[(slideIndex - 1 + n) % n].className.replace(" projectLeft", "");
     slides[(slideIndex + 1 + n) % n].className = slides[(slideIndex + 1 + n) % n].className.replace(" projectRight", "");
-    projectDots[slideIndex].className = projectDots[slideIndex].className.replace(" active", "");
+    projectDots[slideIndex].className = projectDots[slideIndex].className.replace(" projectactive", "");
     if (slideIndex != newSlideIndex)
         reset(slides);
     slideIndex = (newSlideIndex + n) % n;
     slides[slideIndex].className += " projectSelected";
     slides[(slideIndex - 1 + n) % n].className += " projectLeft";
     slides[(slideIndex + 1) % n].className += " projectRight";
-    projectDots[slideIndex].className += " active";
+    projectDots[slideIndex].className += " projectactive";
 
 }
 

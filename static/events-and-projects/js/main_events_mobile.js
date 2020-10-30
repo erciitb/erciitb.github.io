@@ -19,14 +19,14 @@ function showeventSlides(newprojectslideIndex) {
     slides[projectslideIndex].className = slides[projectslideIndex].className.replace(" eventSelected", "");
     slides[(projectslideIndex - 1 + n) % n].className = slides[(projectslideIndex - 1 + n) % n].className.replace(" eventLeft", "");
     slides[(projectslideIndex + 1 + n) % n].className = slides[(projectslideIndex + 1 + n) % n].className.replace(" eventRight", "");
-    eventDots[projectslideIndex].className = eventDots[projectslideIndex].className.replace(" active", "");
+    eventDots[projectslideIndex].className = eventDots[projectslideIndex].className.replace(" eventactive", "");
     if (projectslideIndex != newprojectslideIndex)
         reset(slides);
     projectslideIndex = (newprojectslideIndex + n) % n;
     slides[projectslideIndex].className += " eventSelected";
     slides[(projectslideIndex - 1 + n) % n].className += " eventLeft";
     slides[(projectslideIndex + 1) % n].className += " eventRight";
-    eventDots[projectslideIndex].className += " active";
+    eventDots[projectslideIndex].className += " eventactive";
 
 }
 
