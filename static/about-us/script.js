@@ -26,8 +26,8 @@ for animating the navbar
         $("#scrollBtn").click(function() {
             $('html, body').animate({
                 scrollTop: 0
-            }, 1000);
-            $("#scrollBtn").fadeOut(1200)
+            }, 100);
+            $("#scrollBtn").fadeOut(10)
         });
     });
     //Animation
