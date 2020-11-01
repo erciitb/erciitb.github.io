@@ -587,7 +587,7 @@ p {
         transition: all 0.3s ease-out;
     }
     .start-header.scroll-on .navbar-brand img {
-        height: 24px;
+        height: 0px;
         -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
     }
