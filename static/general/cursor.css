@@ -55,3 +55,8 @@ button:not(:disabled) {
         display: block;
     }
 }
+
+@font-face {
+	font-family: Azonix;
+	src: url(./fonts/Azonix.otf);
+}
