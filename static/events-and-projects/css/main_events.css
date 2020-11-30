@@ -390,6 +390,20 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    .main-events .title {
+    text-align: center;
+    font-family: Azonix;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(5vw + 5vh);
+    line-height: 86%;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 10px black;
+}
     .mobile-events-container {
         display: flex;
     }
