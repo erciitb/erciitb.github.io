@@ -401,6 +401,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
+    width: fit-content;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 10px black;
 }
