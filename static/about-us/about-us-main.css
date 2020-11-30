@@ -176,6 +176,7 @@ body.dark .active .nav-link {
 
 .navbar {
     padding-left: 40%;
+    padding: 0rem 1rem !important;
 }
 
 .navbar-brand img {
