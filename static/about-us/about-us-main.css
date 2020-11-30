@@ -1,6 +1,7 @@
 /* #Primary
 ================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -19,7 +20,12 @@ html {
     /* for the logo moving here and there */
     overflow-y: hidden;
 }
-
+.dark1 {
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700 !important;
+}
 .ercsvgfull {
     position: absolute;
     vertical-align: auto;
