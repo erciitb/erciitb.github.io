@@ -147,7 +147,7 @@ body {
 
 .project-container h2 {
     z-index: 10;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     bottom: 0;
     right: 15%;
@@ -266,7 +266,7 @@ body {
     text-overflow: ellipsis;
     -ms-text-overflow: ellipsis;
     font-weight: 600;
-    font-family: "Montserrat", sans-serif;
+    font-family: varela round;
 }
 
 
