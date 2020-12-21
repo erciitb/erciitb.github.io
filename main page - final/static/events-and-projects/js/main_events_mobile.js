@@ -21,7 +21,7 @@ function showeventSlides(newprojectslideIndex) {
     slides[(projectslideIndex + 1 + n) % n].className = slides[(projectslideIndex + 1 + n) % n].className.replace(" eventRight", "");
     eventDots[projectslideIndex].className = eventDots[projectslideIndex].className.replace(" eventactive", "");
     if (projectslideIndex != newprojectslideIndex)
-        reset(slides);
+        event_reset(slides);
     projectslideIndex = (newprojectslideIndex + n) % n;
     slides[projectslideIndex].className += " eventSelected";
     slides[(projectslideIndex - 1 + n) % n].className += " eventLeft";
@@ -30,7 +30,7 @@ function showeventSlides(newprojectslideIndex) {
 
 }
 
-function reset(slides) {
+function event_reset(slides) {
     var n = slides.length;
     var e = slides[projectslideIndex].children[0].children[1];
     if (e.children[2].className.indexOf("hide") == -1)
