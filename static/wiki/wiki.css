@@ -9,7 +9,7 @@
     position: fixed;
     top: 0;
     height: 100%;
-    z-index: 9999;
+    z-index: 10000;
 }
 
 .wiki .sidebar {
