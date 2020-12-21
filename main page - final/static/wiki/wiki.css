@@ -18,8 +18,13 @@
     left: -400px;
     height: 100%;
     top: 0px;
-    background: #1e1e1e;
+    background: rgba(30, 30, 30, 0.8);
     transition: all .5s ease;
+
+    /* glassmorphism */
+    backdrop-filter: blur(20px);
+    border: solid 1px transparent;
+    background-clip: padding-box;
 }
 
 /* scroll part along with the scroll inside the about us main section  */
