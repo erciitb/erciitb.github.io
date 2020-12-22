@@ -43,6 +43,18 @@ for removing pointers all over the place
     cursor: none;
 }
 
+a, button, li, div, i, i::before, i#cancel {
+    cursor: none
+}
+
+a:hover, button:hover, li:hover, div:hover, i:hover, i::before:hover {
+    cursor: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),

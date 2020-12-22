@@ -76,3 +76,27 @@
     text-decoration:none;
     z-index:9999;
 }
+
+#reg-side-container {
+    right: 23px;
+    position:fixed;
+    top:calc(50% - 250px);
+    transition:width 300ms ease-out;
+    width:0;
+    z-index: 9999;
+}
+
+@media screen and (max-width: 768px) {
+    #reg-side-container {
+        right: 0;
+    }
+
+    .register-side-button {
+        height: 20px;
+        width: 250px;
+    }
+
+    .register-side-text {
+        font-size: 12px;
+    }
+}
