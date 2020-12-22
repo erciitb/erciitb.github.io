@@ -5,7 +5,16 @@ for animating the navbar
 */
 (function($) {
     "use strict";
+var myVar;
 
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    }
     $(function() {
         var header = $(".start-style");
         $(window).scroll(function() {
