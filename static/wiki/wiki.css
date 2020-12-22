@@ -25,6 +25,8 @@
     backdrop-filter: blur(20px);
     border: solid 1px transparent;
     background-clip: padding-box;
+
+    text-align: left;
 }
 
 /* scroll part along with the scroll inside the about us main section  */
@@ -171,4 +173,31 @@
     opacity: 0.3;
     /* mix-blend-mode: color-burn; */
     background-color: #111;
+    transition-duration: all .5s ease;
+}
+
+/* 
+===================================================
+for adding scroll in wiki
+===================================================
+*/
+
+.wiki .sidebar {
+    overflow-y: auto;
+}
+
+.wiki .sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.wiki .sidebar::-webkit-scrollbar-thumb {
+    background: transparent;
+    background-color: rgb(87, 87, 87);
+    border-radius: 3px;
+}
+
+.wiki .sidebar::-webkit-scrollbar-track {
+    background: #1a1b1d;
+    border: none;
+    border-right: none;
 }
