@@ -165,7 +165,7 @@ body.dark .active .nav-link {
 
 .navigation-wrap {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 7%;
     top: 0;
     left: 0;
@@ -632,7 +632,7 @@ p {
     }
     .navigation-wrap {
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 8%;
         top: 0;
         left: 0;
