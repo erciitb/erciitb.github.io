@@ -86,7 +86,7 @@ function handleScrollBot(e) {
 // console.log( userAg.indexOf("Chrome"), userAg.indexOf("Firefox"));
 // console.log( userAg.indexOf("Opera"), userAg.indexOf("MSIE"), userAg.indexOf("Safari"));
 if (navigator.userAgent.indexOf("Firefox") != -1 && windowWidth > 768) {
-  console.log("Firefox detected");
+  // console.log("Firefox detected");
 
   scrollBotContainer.style.display = "block";
   setInterval(refreshScrollValues, initTime);

@@ -2,7 +2,7 @@
 
 window.addEventListener('load', async (e)=> {
   await myFunction()
-  console.log('loaded')
+  // console.log('loaded')
 })
 
 var myVar;
