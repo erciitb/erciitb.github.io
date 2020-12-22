@@ -1,0 +1,59 @@
+
+body {
+  overflow: overlay;
+}
+
+#scroll-bot {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  z-index: 100001;
+  height: 110%;
+  width: 25px;
+  display: none;
+  background: #1a1b1d;
+  border-left: 3px #fff solid;
+  border-right: 4px #fff dashed;
+}
+
+#scroll-bot img {
+  position: relative;
+  width: 40px;  
+  top: -50px;
+  /* right: -20px; */
+}
+
+
+/* hiding the scrollbar except for webkit */
+
+html {
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 30px;
+  background: transparent;
+  /* overflow: overlay; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: url("./scroll-bot.png");
+  background-position: center;
+background-position-x: 10px;
+min-height: 7vw;
+  background-size: contain;
+background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-track {
+background: #1a1b1d;
+  border-left: 4px solid #fff;
+  border-right: 6px dashed #fff;
+  /*nothing else works - outline, svg as background image*/
+}
+
+@media screen and (max-width:768px) {
+   ::-webkit-scrollbar {
+      display: none;
+  }
+}

@@ -12,9 +12,13 @@
     <!-- Favicon -->
     <link rel="icon" href="./favicon.svg" sizes="any" type="image/svg+xml">
 
+    <!-- Loader CSS  -->
+    <link rel="stylesheet" href="./static/general/loader/loader.css">
+
     <!-- Introduction and About Us Section CSS -->
     <link rel="stylesheet" href="./static/about-us/about-us-main.css">
     <link rel="stylesheet" href="./static/wiki/wiki.css">
+    <link rel="stylesheet" href="./static/general/scroll-bar/scroll-bar.css">
     <!-- Bootstrap 4  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!--Google Fonts-->
@@ -40,14 +44,13 @@
     <link rel="stylesheet" href="./static/contact-files/style.css">
 
     <!-- Cursor Animation CSS -->
-    <link rel="stylesheet" href="./static/general/cursor.css">
+    <link rel="stylesheet" href="./static/general/cursor/cursor.css">
 
     <!-- Some General CSS -->
-    <link rel="stylesheet" href="./static/general/general.css">
-    <link rel="stylesheet" href="./static/general/register.css">
+    <link rel="stylesheet" href="./static/general/register-button/register.css">
 </head>
 
-<body data-spy="scroll" data-target="#navbarSupportedContent" onload="myFunction()" style="margin:0;">
+<body data-spy="scroll" data-target="#navbarSupportedContent" >
 
     <section id="loadpack">
         <div class="loader loader-5">
@@ -318,7 +321,7 @@
             </div>
             <div class="desktop-card">
                 <a class="typeform-share button" href="https://form.typeform.com/to/Rq9XsATC?typeform-medium=embed-snippet*" data-mode="popup" data-size="70" target="_blank">
-                    <div class="reg-button"><img src="./static/general/reg-button.png" alt="Register NOW!"></div>
+                    <div class="reg-button"><img src="./static/general/register-button/reg-button.png" alt="Register NOW!"></div>
                 </a>
                 <h2 class="large-head">Intro to Arduino <i class="fas fa-arrow-right"></i>
                 </h2>
@@ -1557,7 +1560,7 @@
     </script>
 
     <!-- for the cursor -->
-    <script src="./static/general/cursor.js"></script>
+    <script src="./static/general/cursor/cursor.js"></script>
     <!-- javascript libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -1566,6 +1569,7 @@
     <script src="./static/about-us/vanilla-tilt.min.js"></script>
     <script src="./static/about-us/particles.min.js"></script>
     <script src="./static/about-us/script.js"></script>
+    <script src="./static/general/scroll-bar/scroll-bar.js"></script>
     <!-- for the events section -->
     <script src="./static/events-and-projects/js/main_events_mobile.js"></script>
     <!-- for the projects section -->
@@ -1574,19 +1578,10 @@
     <script src="./static/contact-files/form.js"></script>
     <!-- for wiki -->
     <script src="./static/wiki/wiki.js"></script>
+    <!-- for Loader  -->
+    <script src="./static/general/loader/loader.js"></script>
     </div>
-    <script>
-        var myVar;
 
-        function myFunction() {
-            myVar = setTimeout(showPage, 500);
-        }
-
-        function showPage() {
-            document.getElementById("loadpack").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
 </body>
 
 </html>
