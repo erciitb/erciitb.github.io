@@ -8,11 +8,11 @@ for animating the navbar
 var myVar;
 
     function myFunction() {
-        myVar = setTimeout(showPage, 3000);
+        myVar = setTimeout(showPage, 500);
     }
 
     function showPage() {
-        document.getElementById("loader").style.display = "none";
+        document.getElementById("loadpack").style.display = "none";
         document.getElementById("myDiv").style.display = "block";
     }
     $(function() {
