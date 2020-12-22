@@ -1575,7 +1575,18 @@
     <!-- for wiki -->
     <script src="./static/wiki/wiki.js"></script>
     </div>
+    <script>
+        var myVar;
 
+        function myFunction() {
+            myVar = setTimeout(showPage, 500);
+        }
+
+        function showPage() {
+            document.getElementById("loadpack").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
