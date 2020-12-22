@@ -17,7 +17,7 @@
 }
 
 .card-body h5 {
-    font-family: "Montserrat", sans-serif;
+    font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 25.38px;
@@ -161,6 +161,6 @@
 .card-text {
     color: black !important;
     font-weight: 400;
-    font-family: varela round;
+    font-family: 'Poppins';
     font-size: small;
 }

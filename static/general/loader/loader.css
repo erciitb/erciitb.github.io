@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    min-height: 215px;
+    vertical-align: bottom;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        min-width: 350px;
+    }
+}
+
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 75px;
+  margin-top: 45vh;
+  display: inline-block;
+  vertical-align: center;
+}
+
+.loader-5 {
+  border: 8px dotted rgba(255, 255, 0, 1);
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-animation: dotted-spin 1s linear infinite;
+  animation: dotted-spin 1s linear infinite;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(255, 255, 0, 0.3);
+  border-left-width: 2px;
+  border-left-color: rgba(255, 255, 0, 0.5);
+  border-top-width: 3px;
+  border-right-width: 4px;
+  border-top-color: rgba(255, 255, 0, 0.7);
+}
+
+.loader-5 .loader-pacman,
+.loader-pacman {
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  width: 0px;
+  height: 0px;
+  border-right: 12px solid transparent;
+  border-top: 12px solid rgba(255, 255, 0, 1);
+  border-left: 12px solid rgba(255, 255, 0, 1);
+  border-bottom: 12px solid rgba(255, 255, 0, 1);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+
+/*LOADER-6*/
+
+@-webkit-keyframes dotted-spin {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+  }
+}
+
+@keyframes dotted-spin {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+  }
+}
+
+
+/* Add animation to "page content" */
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+      bottom: -100px;
+      opacity: 0
+  }
+  to {
+      bottom: 0px;
+      opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+      bottom: -100px;
+      opacity: 0
+  }
+  to {
+      bottom: 0;
+      opacity: 1
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
