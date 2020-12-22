@@ -47,8 +47,15 @@
     <link rel="stylesheet" href="./static/general/register.css">
 </head>
 
-<body data-spy="scroll" data-target="#navbarSupportedContent">
+<body data-spy="scroll" data-target="#navbarSupportedContent" onload="myFunction()" style="margin:0;">
 
+    <section id="loadpack">
+        <div class="loader loader-5">
+            <div class="loader-pacman"></div>
+        </div>
+    </section>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
     <!-- back to top -->
     <button id="scrollBtn" class="hover-difference" title="Go to top"
         style="z-index: 6000; padding-top:0px;">&#8963;</button>
@@ -1567,7 +1574,7 @@
     <script src="./static/contact-files/form.js"></script>
     <!-- for wiki -->
     <script src="./static/wiki/wiki.js"></script>
-
+    </div>
 
 </body>
 
