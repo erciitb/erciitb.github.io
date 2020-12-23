@@ -1,0 +1,8 @@
+Contains the rough size of media for each section (contains the actual value):
+	Start: 80KB
+	About Us: 1MB
+	Events: 8.7MB  (24.3MB)
+	Projects: 1.7MB (6MB)
+	Team Details: 3.9MB
+	
+	Total: 15.4MB (35.2MB)
