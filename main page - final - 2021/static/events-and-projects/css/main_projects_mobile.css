@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+.img {
+    pointer-projects: none;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    transition: width 1s;
+    /* background-image: url("../media/projects/arduino.jpg"); */
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    width: 100%;
+}
+
+.card-body h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25.38px;
+    line-height: 131.1%;
+    color: #2C3C4F;
+}
+
+.card-body h6 {
+    color: #C5C6C7;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17.38px;
+    line-height: 131.1%;
+}
+
+
+/* Slideshow container */
+
+.mobile-projects-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.project-slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    /* display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    -ms-flex-flow: row; */
+}
+
+
+/* Hide the images by default */
+
+.projectSlides {
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    display: none;
+    margin: auto;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+/* The projectDots/bullets/indicators */
+
+.projectDot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.projectactive,
+.projectDot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    /* -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; */
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.projectSelected {
+    z-index: 10;
+    display: inline-block;
+    transform: translate(-50%, 0) scale(1);
+    /* -moz-transform: translate(0, 0); */
+}
+
+.projectLeft {
+    display: inline-block;
+    transform: translate(-150%, 0) scale(0.8);
+}
+
+.projectRight {
+    display: inline-block;
+    transform: translate(50%, 0) scale(0.8);
+}
+
+.hide {
+    display: none;
+}
+
+.show-content {
+    transform: translate(0, -70%);
+    background-color: white;
+}
+
+.card-body {
+    transition: all 0.3s ease;
+    text-align: left;
+    /* ; margin: 0;
+    padding-top: 0px;
+    opacity: 1;
+    transform: initial */
+    /* transition: all 300ms linear; */
+    /* transition-delay: 1700ms; */
+}
+
+.card-text {
+    color: black !important;
+    font-weight: 400;
+    font-family: 'Poppins';
+    font-size: small;
+}

@@ -1,0 +1,396 @@
+:root {
+    --bg-color: #1F2833;
+    --button-color: #2C9DA5;
+    --vertical-color: #333;
+    --overlay: #111;
+}
+
+.main-projects .title {
+    text-align: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(5vw + 5vh);
+    line-height: 86%;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: max-content;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 10px black;
+}
+
+.main-projects .background {
+    background-image: url("../media/projects/drone.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    /* filter: contrast(0.5); */
+}
+
+.main-projects {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* project-container for project */
+
+.project-container {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* adding border to the project section */
+
+.project-container .project-border {
+    margin: 2% 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* one desktop-card */
+
+.project-container .desktop-card {
+    margin-bottom: 100px;
+    position: relative;
+    /* max-height: 0px; */
+    width: 90vw;
+    height: 40vw;
+    min-height: 200px;
+    max-height: 400px;
+    min-width: 500px;
+    max-width: 1000px;
+    /* padding-top: 40%; */
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+/* half circle above */
+
+.project-container .desktop-card:before {
+    content: "";
+    z-index: 10;
+    position: absolute;
+    top: -10px;
+    left: 32px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: var(--bg-color);
+}
+
+
+/* half circle below */
+
+.project-container .desktop-card:after {
+    content: "";
+    z-index: 10;
+    position: absolute;
+    bottom: -10px;
+    left: 32px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: var(--bg-color);
+}
+
+
+/* dots on image */
+
+.project-container .card-dots {
+    z-index: 10;
+    position: absolute;
+    left: 39px;
+    top: 5px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+
+/* dots on image */
+
+.project-container .card-dots li {
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    margin: 6px 0;
+    padding-left: 0px;
+    background-color: var(--bg-color);
+}
+
+
+/* project title */
+
+.project-container h2 {
+    z-index: 10;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    font-size: 400%;
+    font-weight: 700;
+    color: #fff;
+    -webkit-text-stroke: 0.5px var(--overlay);
+}
+
+.project-container .large-head {
+    font-size: 350%;
+}
+
+
+/* for arrow */
+
+.project-container i {
+    opacity: 0;
+    color: #fff;
+    will-change: transform;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.project-container .fa-arrow-right {
+    font-size: 100%;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.project-container .large-head .fa-arrow-right {
+    font-size: 80%;
+}
+
+
+/* short line */
+
+.project-container .vertical {
+    z-index: 10;
+    position: absolute;
+    top: 5%;
+    right: 14%;
+    color: #000;
+    font-weight: bold;
+    opacity: 0.7;
+    font-size: calc(1vw + 1vh);
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* picture */
+
+.project-container .desktop-card .pic {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    z-index: 0;
+    width: 80%;
+    height: 100%;
+    /* background-image: url("../media/projects/arduino.jpg"); */
+    background-size: cover;
+    /* filter: grayscale(100%); */
+    transition: all 0.2s ease;
+}
+
+
+/* circle */
+
+.project-container button {
+    position: absolute;
+    left: 90%;
+    bottom: 7%;
+    width: 7%;
+    padding-top: 7%;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 400px;
+    cursor: none;
+    outline: none;
+    transition: all 0.3s ease;
+    mix-blend-mode: hard-light;
+}
+
+.project-container .overlay {
+    background-color: var(--overlay);
+    opacity: 0.3;
+    mix-blend-mode: color-burn;
+}
+
+.project-container button i {
+    font-size: 3rem;
+}
+
+.project-container .detail {
+    z-index: 30;
+    position: absolute;
+    top: 10%;
+    bottom: 25%;
+    right: 25%;
+    width: 42%;
+    /* height: 70%; */
+    color: #FFF;
+    opacity: 0;
+    font-size: 85%;
+    letter-spacing: 1px;
+    text-align: justify;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* hovering effect */
+
+.project-container .desktop-card:hover i {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.project-container .desktop-card:hover button {
+    transform: scale(20.5);
+}
+
+.project-container .desktop-card:hover .vertical {
+    color: var(--vertical-color);
+    text-shadow: 0 0 1px #666;
+}
+
+.project-container .desktop-card:hover .pic {
+    opacity: 0.9;
+    filter: blur(1px);
+}
+
+.project-container .desktop-card:hover .detail {
+    opacity: 1;
+    /* background-color: #333; */
+    /* text-shadow: 0 0 5px #333; */
+}
+
+
+/* half circle above */
+
+.project-container .desktop-card2:before {
+    top: -10px;
+    left: auto;
+    right: 32px;
+}
+
+
+/* half circle below */
+
+.project-container .desktop-card2:after {
+    bottom: -10px;
+    right: 32px;
+    left: auto;
+}
+
+
+/* dots on image */
+
+.project-container .desktop-card2 .card-dots {
+    z-index: 10;
+    position: absolute;
+    right: 39px;
+    left: auto;
+    top: 5px;
+    list-style-type: none;
+}
+
+
+/* project title */
+
+.project-container .desktop-card2 h2 {
+    bottom: 0;
+    left: 25%;
+    right: auto;
+}
+
+
+/* short line */
+
+.project-container .desktop-card2 .vertical {
+    left: 14%;
+    right: auto;
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
+}
+
+
+/* picture */
+
+.project-container .desktop-card2 .pic {
+    left: 20%;
+}
+
+
+/* circle */
+
+.project-container .desktop-card2 button {
+    right: 90%;
+    left: auto;
+}
+
+.project-container .desktop-card2 .detail {
+    left: 25%;
+}
+
+@media screen and (min-width: 1000px) {
+    .project-container h2 {
+        font-size: 700%;
+    }
+    .project-container .large-head {
+        font-size: 450%;
+    }
+    .project-container .detail {
+        top: 10%;
+        font-size: 105%;
+    }
+}
+
+.mobile-projects-container {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .mobile-projects-container {
+        display: flex;
+    }
+    .project-container .desktop-card {
+        display: none;
+    }
+    /* .project-container .mobile-card {
+        display: initial;
+    } */
+}

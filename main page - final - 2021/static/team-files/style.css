@@ -1,0 +1,220 @@
+html {
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.no-display {
+    display: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+
+/* 
+===============handling the team section==============
+*/
+
+.team-section {
+    width: 100%;
+    background-color: #1F2833;
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.team-section .team-head.background-parallax {
+    width: 100%;
+    height: 50vh;
+    background: url(./media/team-details-bg.JPG);
+    /* adding parallax */
+    background-attachment: fixed;
+    /* background-position-y: -340px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100% 100%; for resizing */
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-section .team-head.background-parallax h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: calc(5vw + 5vh);
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.team-section .team-content {
+    /* this is the wrapper for the team grid  */
+    margin: 3% auto 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-section .team-content .team-content-mangrs {
+    /* this is the manager row  */
+    display: grid;
+    grid-template-columns: 20% 20%;
+    column-gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.team-content .team-content-mangrs .team-contact-card {
+    margin: 0 auto;
+}
+
+.team-section .team-content .team-content-cons-enthus {
+    /* this is the convener wrapper */
+    width: 75%;
+    margin: 2% auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.team-content .team-content-cons-enthus .team-convener-row {
+    /* this is for the styling of one convener/enthusiast row  */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.team-content .team-contact-card {
+    /* these are the contact cards for the full team  */
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 10px 10px;
+    /* border: 1px solid black; */
+}
+
+.team-content .team-contact-card .team-member-img {
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+
+.team-content .team-contact-card .team-member-img img {
+    width: 80%;
+    max-width: 220px;
+    /* min-width: 110px; */
+    border-radius: 50%;
+    margin: 10px auto;
+    transition: 0.4s ease-in-out;
+}
+
+.team-content .team-contact-card .team-member-contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 1.275em;
+    text-align: center;
+    z-index: -1;
+    transition: 0.4s ease-in-out;
+}
+
+.team-contact-card .team-member-contact a {
+    padding: 3px;
+}
+
+.team-content .team-contact-card .team-member-img:hover img {
+    opacity: 0.5;
+}
+
+.team-content .team-contact-card .team-member-img:hover .team-member-contact {
+    animation: fadeIn 0.4s ease-in-out alternate;
+    display: block;
+    z-index: 10;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.team-content .team-contact-card .team-member-name {
+    padding: 5px 0px;
+    padding-bottom: 0px;
+    /* white-space: nowrap; */
+}
+
+.team-content .team-contact-card .team-member-name#long-name {
+    font-size: 0.9em;
+}
+
+.team-content .team-contact-card .team-member-pos {
+    padding: 5px 0px;
+    padding-top: 2px;
+    font-size: 0.75em;
+    opacity: 0.7;
+    white-space: nowrap;
+}
+
+@media screen and (max-width:1280px) {
+    .team-section {
+        font-size: 16px;
+    }
+    .team-section .team-content .team-content-cons-enthus {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .team-section .team-content .team-content-mangrs {
+        grid-template-columns: 33.3% 33.3%;
+    }
+    .team-section .team-content .team-content-cons-enthus {
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .team-content .team-contact-card .team-member-name#long-name {
+        font-size: 0.75em;
+    }
+    .team-section .team-head.background-parallax h2 {
+        /* font-size: 60px; */
+        background-position-x: 1000px;
+    }
+    .team-section {
+        font-size: 14px;
+    }
+}

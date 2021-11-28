@@ -1,0 +1,69 @@
+/* 
+for some reason this doesn't work 
+*/
+
+
+/*
+.hover-this:hover ~ .cursor{
+	background-color: blue;
+	mix-blend-mode: difference;
+	transform: translate(-50%, -50%) scale(8);
+} */
+
+.cursor {
+    display: none;
+    pointer-events: none;
+    position: fixed;
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 50%;
+    /* transition: transform 0.3s ease-out; */
+    scale: 1;
+    transition: transform 0.2s ease-out;
+    z-index: 100002;
+    mix-blend-mode: normal;
+}
+
+.enlarged-cursor {
+    transform: scale(2.5);
+}
+
+.cursor-difference-filter {
+    mix-blend-mode: difference;
+}
+
+
+/*
+=================================================
+for removing pointers all over the place
+=================================================
+*/
+
+* {
+    cursor: none;
+}
+
+a, button, li, div, i, i::before, i#cancel {
+    cursor: none
+}
+
+a:hover, button:hover, li:hover, div:hover, i:hover, i::before:hover {
+    cursor: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+    cursor: none;
+}
+
+@media screen and (min-width:768px) {
+    .cursor {
+        display: block;
+    }
+}
