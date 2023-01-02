@@ -41,13 +41,13 @@
 
 .register-side-text{
     text-decoration:none;
-    font-size:15px;
+    font-size:20px;
     font-family:"Montserrat",Helvetica,Arial,sans-serif;
     white-space:nowrap;
     /* letter-spacing: -1pt; */
     overflow:hidden;
     text-overflow:ellipsis;
-    width:100%;
+    width:250%;
     text-align:center;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
