@@ -130,8 +130,8 @@ button {
 }
 
 .team-content .team-contact-card .team-member-img img {
-    width: 125.35px;
-    height: 125.35px;
+    width: 175.35px;
+    height: 175.35px;
     max-width: 220px;
     /* min-width: 110px; */
     border-radius: 50%;
@@ -206,7 +206,7 @@ button {
         grid-template-columns: 33.3% 33.3%;
     }
     .team-section .team-content .team-content-cons-enthus {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         width: 100%;
     }
