@@ -86,6 +86,7 @@ button {
     justify-content: center;
     margin: 0 auto;
     width: 90%;
+   
 }
 
 .team-content .team-content-mangrs .team-contact-card {
@@ -95,6 +96,7 @@ button {
 .team-section .team-content .team-content-cons-enthus {
     /* this is the convener wrapper */
     width: 75%;
+   
     margin: 2% auto;
     text-align: center;
     display: grid;
@@ -129,6 +131,7 @@ button {
 
 .team-content .team-contact-card .team-member-img img {
     width: 80%;
+    width:80%;
     max-width: 220px;
     /* min-width: 110px; */
     border-radius: 50%;
