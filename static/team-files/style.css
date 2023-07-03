@@ -203,7 +203,7 @@ button {
 
 @media screen and (max-width:768px) {
     .team-section .team-content .team-content-mangrs {
-        grid-template-columns: 33.3% 33.3%;
+        grid-template-columns: 1fr 1fr;
     }
     .team-section .team-content .team-content-cons-enthus {
         grid-template-columns: 1fr 1fr ;
