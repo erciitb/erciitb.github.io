@@ -96,10 +96,13 @@
                                 <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
                                     <a class="nav-link" href="#contact" style="font-size: medium; ">Contact Us</a>
                                 </li>
-				    <div class="calendar-dropdown">
-				    <li><iframe src="https://calendar.google.com/calendar/embed?src=kaustavsaha2004%40gmail.com&ctz=UTC" style="border: 0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
-				    </li>
+				   <div class="dropdown">
+                                   <button class="dropdown-button">Calendar</button>
+                                    <div class="dropdown-content">
+                                   <li><iframe src="https://calendar.google.com/calendar/embed?src=kaustavsaha2004%40gmail.com&ctz=UTC" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+				   </li>
 				    </div>
+                                 </div>
                                 <!-- <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
                                     <a class="nav-link" style="font-size: medium; " onclick=showsidebar()>Wiki</a>
                                 </li> -->
@@ -1678,6 +1681,16 @@
     <script src="./static/wiki/wiki.js"></script>
     <!-- for Loader  -->
     <script src="./static/general/loader/loader.js"></script>
+	    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var button = document.querySelector(".dropdown-button");
+    var content = document.querySelector(".dropdown-content");
+
+    button.addEventListener("click", function () {
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
     </div>
 
 </body>
