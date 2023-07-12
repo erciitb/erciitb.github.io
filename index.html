@@ -76,6 +76,49 @@
   right:0;
 }
 	</style>
+  <style>
+    .dropdown {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 8px;
+      background-color: #f1f1f1;
+    }
+
+    .dropdown-button {
+      color: #333;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      background-color: #f1f1f1;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .dropdown-button:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 8px;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+
 </head>
 
 <body data-spy="scroll" data-target="#navbarSupportedContent" >
@@ -129,7 +172,8 @@
 				    <br>
 				    <!-----Calendar Button-->
 	                           <div class="dropdown">
-                                   <button class="dropdown-button" style="border-radius: 50 %;background-color:red;color:white;border-color:white;font-size:large;">CALENDAR</button>
+                                   <!--<button class="dropdown-button" style="border-radius: 50 %;background-color:red;color:white;border-color:white;font-size:large;">CALENDAR</button>-->
+					<button class="dropdown-button" >CALENDAR</button>
                                     <div class="dropdown-content">
                                   <li><script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-2b0374fb-2d58-4793-b759-82b98e5007f5" style="height:400px;width:800px" ></div>
