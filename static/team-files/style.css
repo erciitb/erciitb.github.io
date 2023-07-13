@@ -199,6 +199,11 @@ button {
     .team-section .team-content .team-content-cons-enthus {
         width: 90%;
     }
+     .animate-bottom.dark about-us-container.navigation-wrap navdark start-header start-style.row.col-12.navbar navbar-expand-md mobilenav.collapse navbar-collapse.navbar-nav ml-auto py-4 py-md-0.elfsight-app-2b0374fb-2d58-4793-b759-82b98e5007f5{
+        height: 400px;
+        width: 800px;
+    
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -219,5 +224,10 @@ button {
     }
     .team-section {
         font-size: 14px;
+    }
+    .animate-bottom.dark about-us-container.navigation-wrap navdark start-header start-style.row.col-12.navbar navbar-expand-md mobilenav.collapse navbar-collapse.navbar-nav ml-auto py-4 py-md-0.elfsight-app-2b0374fb-2d58-4793-b759-82b98e5007f5{
+        height: 100px;
+        width: 200px;
+    
     }
 }
