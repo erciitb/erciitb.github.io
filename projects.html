@@ -10,6 +10,50 @@
    <link rel='stylesheet' type='text/css' href='./static/events-and-projects/css/main_projects.css'>
 </head>
 <body>
+
+        <!-- About Us Section -->
+<!--     <div class="dark about-us-container"> -->
+        <div class="navigation-wrap navdark start-header start-style">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-md mobilenav ">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="fas fa-bars"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-right: 4%;border: 5%">
+                            <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link " href="index.html" style="font-size: medium; ">Home</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link" href="https://erciitb.github.io/ERC-website-2021/blog" style="font-size: medium; ">Blogs</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link" href="events.html" style="font-size: medium; ">Events</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link" href="#projects" style="font-size: medium; ">Projects</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link" href="index.html" style="font-size: medium; ">Team Details</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-1 ml-md-4">
+                                    <a class="nav-link" href="index.html" style="font-size: medium; border-right:10% ;padding-right:10%;">Contact Us</a>
+                                </li>
+				    <br>
+				    
+        
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
     <!-- Projects Section  -->
     <div class="project-container" id="projects">
       <div class="main-projects hover-enlarge hover-difference">
@@ -18,7 +62,7 @@
       </div>
 
       <div class="project-border">
-          <div class="desktop-card desktop-card2">
+          <div class="desktop-card desktop-card2" id="drone-delivery>
               <h2 class="large-head">Drone Delivery<i class="fas fa-arrow-right"></i>
               </h2>
               <p class='vertical'>New generation</p>
@@ -132,7 +176,7 @@
               </button>
               <button class='overlay'></button>
           </div>
-          <div class="desktop-card">
+          <div class="desktop-card" id="wall-climbing-bot>
               <h2 class="large-head">Wall climbing Bot
                   <i class="fas fa-arrow-right"></i>
               </h2>
@@ -244,7 +288,7 @@
               </button>
               <button class='overlay'></button>
           </div>
-          <div class="desktop-card desktop-card2">
+          <div class="desktop-card desktop-card2"kid="robotex-liner">
               <h2 class="large-head">Robotex Line<br> Follower<i class="fas fa-arrow-right"></i>
               </h2>
               <p class='vertical'>LEGO!</p>
@@ -354,7 +398,7 @@
               <button class='overlay'></button>
 
           </div>
-          <div class="desktop-card">
+          <div class="desktop-card" id="smart-suitcase">
               <h2 class="large-head">Smart Suitcase
                   <i class="fas fa-arrow-right"></i>
               </h2>
@@ -457,5 +501,27 @@
   </div>
 </div>
 </div>
+
+  <script>
+  document.getElementById("wall-climber-bot").onclick = function() {
+    window.location.href = "another-page.html";
+  };
+</script>
+<script>
+  document.getElementById("drone-delivery").onclick = function() {
+    window.location.href = "another-page.html";
+  };
+</script>
+<script>
+  document.getElementById("robotex-liner").onclick = function() {
+    window.location.href = "another-page.html";
+  };
+</script><script>
+  document.getElementById("smart-suitcase").onclick = function() {
+    window.location.href = "another-page.html";
+  };
+</script>
+
+
 </body>
 </html>
