@@ -151,19 +151,19 @@ header p {
 
 /* Add background images to sections */
 #registration {
-  background-image: url("img2.jpg");
+  background-image: url("static/events-and-projects/media/events/img2.jpg");
   background-size: cover;
   color: #d72c23;
 }
 
 #events {
-  background-image: url("img6.jpg");
+  background-image: url("static/events-and-projects/media/events/img6.jpg");
   background-size: cover;
   color: #fff;
 }
 
 #movies {
-  background-image: url("img1.jpg");
+  background-image: url("static/events-and-projects/media/events/img1.jpg");
   background-size: cover;
   color: #fff;
 }
