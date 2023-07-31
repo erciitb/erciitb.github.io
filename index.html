@@ -78,6 +78,17 @@
 	</style> -->
  
 	<style>
+    .announcement{
+     font-weight: bold;
+     color:red;  
+     padding-top: 15px;
+     padding-bottom: 15px;
+     annimation:anmet 4s ease-in 0s infinite alternate;
+    }
+    @keyframes anmet{
+      from {left:0px;}
+      to    {right:0px;} 
+    }
     .dropdown {
       position: relative;
       top: -5px;
@@ -222,7 +233,10 @@
                 </div>
             </div>
         </div>
-
+        <!-- Announcements div added here You will get the css for this above -->
+	    <div class =announcement">
+		     <p>ANNOUNCEMENTS:XLR8 COMING SOON!!!</p>
+	    </div>
         <div class="wiki">
             <i class="fas fa-times" id="cancel" onclick=hidesidebar()></i>
             <div id="wiki-overlay" onclick=hidesidebar()></div>
