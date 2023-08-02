@@ -726,11 +726,27 @@
         </div>
     </div>
 </div>
-  <script>
+
+	<script>
+        // Get the clickable box element
+        const clickableBox = document.getElementById('XLR8');
+
+        // Function to handle the click event
+        function handleClick() {
+            // Redirect to the target page (change 'target-page.html' to the actual target page)
+            window.location.href = 'XLR8.html';
+        }
+
+        // Add event listener for mouse clicks and touch events
+        clickableBox.addEventListener('click', handleClick);
+        clickableBox.addEventListener('touchstart', handleClick);
+    </script>
+
+<!--   <script>
   document.getElementById("XLR8").onclick = function() {
     window.location.href = "XLR8.html";
   };
-</script>
+</script> -->
   <script>
   document.getElementById("Arduino").onclick = function() {
     window.location.href = "ArduinoBootCamp.html";
