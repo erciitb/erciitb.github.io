@@ -2,6 +2,14 @@
     pointer-events: none;
 }
 
+        @media (max-width: 600px) {
+            .img {
+                pointer-events: auto;
+                /* Add any specific styles for mobile phones here */
+            }
+        }
+
+
 .card-img-top {
     width: 100%;
     height: 50vh;
