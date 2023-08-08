@@ -6,7 +6,7 @@ body {
 #scroll-bot {
   position: fixed;
   top: 0px;
-  right: 0;
+  right: 10px;
   z-index: 100001;
   height: 110%;
   width: 25px;
@@ -31,7 +31,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 30px;
+  width: 0px;
   background: transparent;
   /* overflow: overlay; */
 }
@@ -57,3 +57,4 @@ background: #1a1b1d;
       display: none;
   }
 }
+
