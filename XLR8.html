@@ -5,6 +5,13 @@
   <title>XLR8</title>
   <!-- Include Bootstrap CSS via CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Add these lines in the head section of your HTML -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <!-- Include your custom CSS file -->
   <link rel="stylesheet" href="./static/team-files/styles.css">
 </head>
@@ -263,6 +270,9 @@
 
 
 <!-- After Movies Section -->
+
+  
+
 <section id="movies" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center mb-4" style="color:black;font-weight:bold;">After Movies</h2>
@@ -277,14 +287,24 @@
 
       <!-- Carousel items -->
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <!-- Video 1 goes here -->
-          <video controls>
+
+        <div class="embed-responsive embed-responsive-16by9">
+  <video controls class="embed-responsive-item">
+    <!-- Video source and content here -->
+     <video controls>
             <source src="./static/team-files/media/New_images/XLR8 Aftermovie 2019 _ IITB (1).mp4">
             Your browser doesnot support the video.
-          </video>
+          </video> -->
+  </video>
+</div>
+<!--         <div class="carousel-item active">
+          <!-- Video 1 goes here -->
+<!--           <video controls>
+            <source src="./static/team-files/media/New_images/XLR8 Aftermovie 2019 _ IITB (1).mp4">
+            Your browser doesnot support the video.
+          </video> -->
          
-        </div>
+        </div> -->
         <div class="carousel-item">
           <!-- Video 2 goes here -->
         </div>
