@@ -26,6 +26,10 @@
   margin-bottom: 1rem;
 }
 
+  .btn-fullscreen {
+  width: 100%;
+}
+
   <style>
     /* Add these CSS rules to your styles.css file */
 /* Ensure images within the gallery have equal dimensions and some margin */
@@ -338,10 +342,6 @@
 
 
 <!-- After Movies Section -->
-
-  
-
-<!-- After Movies Section -->
 <section id="movies" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center mb-4">After Movies</h2>
@@ -350,21 +350,13 @@
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4Y6ykZW8Fzo"></iframe>
         </div>
+        <button class="btn btn-secondary btn-block mt-2" onclick="toggleFullScreen(this)">Toggle Full Screen</button>
       </div>
-<!--       <div class="col-md-4 mb-4">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
-        </div>
-      </div> -->
       <!-- Add more columns for more videos -->
     </div>
   </div>
 </section>
+
 
 
 <!-- Testimonials Section -->
@@ -540,6 +532,20 @@ $(".hover").mouseleave(
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  // JavaScript to enable full-screen mode
+function toggleFullScreen(element) {
+  if (!document.fullscreenElement) {
+    element.parentNode.requestFullscreen().catch(err => {
+      console.log(`Error attempting to enable full-screen: ${err.message}`);
+    });
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+
 
 
 </script>
